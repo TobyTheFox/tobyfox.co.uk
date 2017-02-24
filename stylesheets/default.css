@@ -1,0 +1,784 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'mayhem';
+    src: url('fonts/mayhem.eot');
+    src: url('fonts/mayhem.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mayhem.woff') format('woff'),
+         url('fonts/mayhem.ttf') format('truetype'),
+         url('fonts/mayhem.svg#mayhem') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gyparody';
+    src: url('fonts/gyparody.eot');
+    src: url('fonts/gyparody.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gyparody.woff') format('woff'),
+         url('fonts/gyparody.ttf') format('truetype'),
+         url('fonts/gyparody.svg#mayhem') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'abeezee';
+    src: url('fonts/abeezee.eot');
+    src: url('fonts/abeezee.eot?#iefix') format('embedded-opentype'),
+         url('fonts/abeezee.woff') format('woff'),
+         url('fonts/abeezee.ttf') format('truetype'),
+         url('fonts/abeezee.svg#abeezee') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'typoslab';
+    src: url('fonts/typoslab.eot');
+    src: url('fonts/typoslab.eot?#iefix') format('embedded-opentype'),
+         url('fonts/typoslab.woff') format('woff'),
+         url('fonts/typoslab.ttf') format('truetype'),
+         url('fonts/typoslab.svg#typoslab') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'american';
+    src: url('fonts/american.eot');
+    src: url('fonts/american.eot?#iefix') format('embedded-opentype'),
+         url('fonts/american.woff') format('woff'),
+         url('fonts/american.ttf') format('truetype'),
+         url('fonts/american.svg#american') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-------------------------DEFAULTS----------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  /* So 100% means 100% */
+  box-sizing: border-box;
+}
+
+body, html{
+		height:100%;
+}
+
+ul, ol {
+   list-style-position: inside;
+}	
+
+h1{
+	font-family:"mayhem";
+	font-size:78px;
+	padding:10px;
+}
+
+h2{
+	font-family:"abeezee";
+	font-size:48px;
+}
+
+h3{
+	font-family:"typoslab";
+	font-size:30px;
+}
+
+h4{
+	font-family:"abeezee";
+	font-size:24px;
+	color:#000;
+	font-weight:bold;
+}
+
+p, a, li{
+	font-family:"abeezee", sans-serif;
+}
+
+.red{background-color:rgba(232,53,86,0.8)}
+.cyan{background-color:rgba(94,208,212,0.8)}
+.yellow{background-color:rgba(209,201,38,0.8)}
+.green{background-color:rgba(94,209,38,0.8)}
+.orange{background-color:rgba(198,117,31,0.8)}
+.twitterBlue{background-color:rgba(96,180,240,0.8)}
+
+a{
+	color:#000;
+}
+
+a:visited{
+	color:#000;
+}
+
+/*--------------------------GENERAL--------------------------------*/
+html { 
+  background: url(../images/homeBG2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header{
+	width:100%;
+	border-bottom:#04C1F7 5px solid;
+	background-color:rgba(255,255,255,0.7);
+	padding:0 5%;
+}
+
+#header a{
+	display:inline-block;
+	text-decoration:none;
+}
+
+@media (max-width:1173px){
+	#header h1{
+		font-size:70px;
+	}
+	
+	#navigation .navItem{
+		margin-left:0;
+	}
+}
+
+@media (max-width:1040px){
+	#header #navigation{
+		display:none;
+	}
+}
+
+#dateBack{
+	position:relative;
+	top:25px;
+	margin-bottom:25px;
+	right:60px;
+	font-family:"american", Verdana, sans-serif;
+	font-size:24px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+#navigation{
+	display:inline;
+	float:right;
+	margin-top:30px;
+}
+
+.navItem{
+	border:#9D9D9D dashed;
+	padding:6px;
+	font-size:22px;
+	margin-left:20px;
+	
+	/*required as jquery doesnt support colour change*/
+	moz-transition:color .2s ease-in;
+    -o-transition:color .2s ease-in;
+    -webkit-transition:color .2s ease-in;
+}
+
+.navItem:hover{
+	border:#000 dashed;
+}
+
+#tileContainer{
+	width:80%;
+	max-width:1250px;
+	height:auto;
+	margin:20px auto 0 auto;
+	display:block;
+	text-align:center;
+}
+
+#tileContainer div{
+	display:inline-block;
+}
+
+.copyright{
+	color:#FFF;
+	margin-left:30px;
+	margin-bottom:20px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - HOME TILE SCREEN - - - - - - - - - - - - - - - - - - - - - - */
+
+#bioContainer{
+	width:100%;
+	height:145px;
+	background-color:rgba(0,0,0,0.4);
+	margin-top:-50px;
+	margin-bottom:10px;
+}
+
+#bioContainer h2{
+	float:left;	
+	position:relative;
+	top:40px;
+}
+
+#bio p{
+	display:block;
+	display:none;
+}
+
+.bioPic{
+	margin:10px;
+	width:120px;
+	height:120px;
+	display:none;
+	float:left;
+}
+
+#bio{
+	width:calc(100% - 600px);
+	margin:60px 0 0 20px;
+	float:left;
+}
+
+
+.tile{
+	width:250px;
+	height:250px;
+	margin:0 10px 20px 10px;
+}
+
+
+/* - - - - ADJUSTS TILE SIZE FOR MOBILE ETC. - - - - - - -*/
+@media  (max-width:861px){
+	.tile{
+		width:200px;
+		height:200px;
+	}
+	#tileContainer{
+		width:100%;
+		margin-left:0;
+	}
+	#dateBack{
+		display:none;
+	}
+}
+
+@media (min-width:862px) and (max-width:1010px){
+	.tile{
+		width:180px;
+		height:180px;
+	}
+}
+
+@media (min-width:1011px) and (max-width:1140px){
+	.tile{
+		width:220px;
+		height:220px;
+	}
+}
+	
+@media (min-width:1408px){
+	.tile{
+		width:270px;
+		height:270px;
+		margin:0 10px 20px 10px;
+	}
+}
+
+/* - - - - - - - ADJUSTS TOP BAR TO REMOVE BORDER AND IMG FOR MOBILE - - - - - - - -*/
+@media (max-width:590px){
+	#bioContainer img{
+		display:none !important;
+	}
+	#bioContainer{
+		background-color:transparent;
+		height:80px;
+	}
+	#bioContainer h2{
+		top:0;
+	}
+}
+
+@media (max-width:442px){
+	#bioContainer{
+		margin-bottom:60px;
+	}
+}
+
+.tile:hover{
+	outline:5px solid #7C7C7C;
+}
+
+.tile img{
+	width:75%;
+	height:auto;
+	margin: auto;
+	display:block;
+}
+
+.tile h3{
+	text-align:center;
+	display:block;
+	margin-top:15px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - OTHER PAGES - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+.tilePage{
+	display:none;
+	padding:40px;
+	width:80%;
+	max-width:1250px;
+	margin: 0 auto;
+}
+
+@media (max-width:650px){
+	.tilePage{
+		width:100%
+	}
+}
+
+.tilePage h2{
+	background-color:rgba(0,0,0,0.60);
+	color:#fff;
+	padding:5px;	
+	width:auto;	
+	display:inline-block;
+}
+
+:not(#tileContainer).tilePage h3{       /*All that isnt tilecontainer, that is also.tilepage... */
+	background-color:rgba(206,206,206,0.70);
+	font-size:38px;
+	padding:5px;
+	margin:20px 0;
+	display:inline-block;		
+}
+
+.tilePage h4{
+	background-color: rgba(220,220,220,0.70);
+	padding:5px;
+	margin:0 10px 15px 0;
+	display:inline-block;
+}
+
+.tilePage p{
+	background-color:rgba(255,255,255,0.80);
+	padding:5px;
+	margin-bottom:4px;
+	font-size:18px;	
+	max-width: 1200px;
+	display:inline-block;
+}
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - PORTFOLIO SCREEN - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+
+
+
+:not(#tileContainer).tilePage img{
+	display:block;
+	width:100%;
+	height:auto;
+	margin-bottom:20px;
+}
+
+.portfolioItem{
+	display:inline-block;
+}
+
+.browserImg{
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border:3px #19BADE solid;
+	border-top:none;
+}
+
+.browserTop{
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border:3px #19BADE solid;
+	height:60px;
+	width:100%;
+	background-image:url(../images/closeBtn.png);
+	background-repeat:no-repeat;
+	padding:12px 10px 0 100px;
+}
+
+.urlBar{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style:italic;
+	font-size:9px;
+	position:relative;
+	width:100%;
+	float:right;
+	border:3px #19BADE solid;
+}
+
+.urlBar:hover{
+	text-decoration:underline;
+}
+
+.urlBar span{
+	color:#079F00;
+}
+
+
+@media (min-width:1300px){	
+	#portfolioContainer .browser{
+		float:left;
+		width:50%;
+	}
+	
+	.browserDesc{
+		float:right;
+		width:48%;
+	}
+}
+
+@media (min-width:1700px){
+	.browserDesc p{
+		padding:15px;
+		font-size:22px;
+		margin-bottom:25px;
+	}
+}
+
+@media (max-width:999px){
+	.browserDesc p{
+		padding:15px;
+		font-size:24px;
+		margin-bottom:25px;
+	}
+}
+
+.portfolioItem{
+	width:100%
+}
+
+
+
+/* - - - - - - - - - WEBSITES - - - - - - - - - - --*/
+
+#websiteContent{
+	background-color:rgba(255,255,255,0.9);
+	height:100%;
+	width:100%;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border:3px #19BADE solid;
+	border-top:none;
+	text-align:center;
+}
+
+#websitesContainer .urlBar{
+	max-width:9999999px;
+}
+
+#yourWebsite{
+	font-size:64px;
+	font-family:american;
+	background-color:rgba(0,0,0,0);
+	margin-top:20px;
+}
+
+
+#thirdsContainer{
+	margin-bottom:10px;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.third{
+	width:32%;
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+	margin:0 1%;
+	
+	-webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+#third1{
+	background-color:#dd582f; 
+	
+}
+
+#third1:hover{
+	background-color:#E7896C;
+}
+
+#third2{
+	background-color:#019c00; 
+}
+
+#third2:hover{
+	background-color:#01CA00;
+}
+
+#third3{
+	background-color:#ff1d77; 
+}
+
+#third3:hover{
+	background-color:#FF609F;
+}
+
+.third p{
+	width:100%;
+}
+
+.listImg{
+	width:40% !important;
+	margin:10px auto;
+	
+}
+
+#websiteContent h3{
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#websiteContent h3:hover{
+	color:#FFF;
+	background-color:#3F3F3F;
+}
+
+.boxP{
+		border:black 2px dashed;
+}
+
+.websiteListDiv{
+	background-color:rgba(107,107,107,0.8);
+	text-align:left;
+	width:80%;
+	margin:10px auto;
+	padding:5px;
+	color:#FFF;
+}
+
+.websiteListDiv p{
+	background-color:transparent;
+}
+
+
+
+/* - - - - - - - - -GAME TILE SCREEN - - - - - - - - - */
+
+.downloadLinks{
+	margin:20px 0;
+}
+
+.gameDownload img{
+	width:100px !important;
+    display: block;
+    margin: auto;
+}
+
+.gameDownload{
+	height:200px;
+	display:inline-block;
+	background-color:rgba(255,255,255,0.2);
+	padding:5px;
+	margin-right:20px;
+}
+
+
+/* - - -- - - - - - -  - - FORM - - - -  - - - - - - - - */
+.lb_label, label{
+	font-family:'abeezee';
+	font-size:22px;
+}
+
+.lb_wrap .lb_label.top, .lb_wrap .lb_label.bottom {
+	top: 10px !important;
+}
+
+/* this changes the placeholder colour */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #505050;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #505050;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #505050;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #505050;
+}
+
+@media (max-width:830px){
+	form{
+		width:100%;
+		position:absolute;
+		left:0;
+	}
+}
+
+
+form{
+	background-color:rgba(161,205,225,0.60);
+	padding:30px;
+	width:100%;
+	margin-top:20px;
+}
+
+.formLabel{
+	width:220px;
+}
+
+
+.formField{
+	border:none;
+	width:100%;
+	height:40px;
+	font:'typoslab';
+	font-size:20px;
+	color:#514C54;
+	background-color:#FFF6EA;
+	margin-top:35px
+}
+
+.formTextField{
+	border:none;
+	width:100%;
+	height:300px;
+	font:'exist';
+	font-size:20px;
+	color:#514C54;
+	background-color:#FFF6EA;
+	resize:none;
+	margin:5px 0;
+}
+
+.selectDiv select {
+   	background: transparent !important;
+   	width: 100% !important;
+   	padding: 5px !important;
+   	font:'exist';
+	font-size:20px !important;
+	color:#514C54 !important;
+   	line-height: 1;
+   	border: 0;
+   	border-radius: 0;
+   	height: 40px !important;
+   	-webkit-appearance: none;
+	
+}
+   
+.selectDiv {
+   width: 100%;
+   max-width:300px;
+   height: 40px !important;
+   overflow: hidden;
+   background:url(../images/arrow.png) no-repeat right #FFF6EA !important;
+   background-size:55px 40px !important;
+   border:0;
+   margin:10px 0;
+}
+
+.checkbox{
+	width:30px;
+	height:30px;
+	background-color:#CBE8FF !important;
+}
+
+input[type=checkbox].checkbox {
+	position: absolute; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+						}
+
+input[type=checkbox].checkbox + label.checkbox-label {
+	padding-left:30px;
+	height:25px; 
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:20px;
+	vertical-align:middle;
+	cursor:pointer;
+						}
+
+input[type=checkbox].checkbox:checked + label.checkbox-label {
+	background-position: 0 -25px;
+						}
+						
+.checkbox-label{ 
+	background-image:url(../images/checkbox.png);
+		}
+.submitButton{
+	border:3px #19BADE solid;
+	margin:5px 0;
+	padding:5px 100px !important;
+	font-size:30px !important;
+	font-family:'abeezee';
+	color:#000;
+	
+	-webkit-transition: all 0.1s linear;
+  	-moz-transition: all 0.1s linear;
+  	transition: all 0.1s linear; 
+	display:inline !important;
+    background:  #C1E0FF url('../images/mail-icon.png') no-repeat top left;
+	background-size:70px 53px;
+}
+
+.submitButton:hover{
+	background-color:#8DC1FF;
+	cursor:pointer;*/
+}
+
+
+
+
+
+
+
+
+
+
+#successMessage{
+	font-size:40px;
+	text-align:center;
+	color:#000;
+}
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2016. HANDCODED SINCE 2014. ------------*/
