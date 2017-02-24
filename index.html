@@ -39,7 +39,7 @@
         <a href="#tile" style="text-decoration:none;"><p id="dateBack">Est. 2008!</p></a>    	
    	
  		<div id="navigation">
-        	<a href="#games"><p id="websitesNavItem" class="navItem">Games</p></a>
+        	<a href="#programs"><p id="websitesNavItem" class="navItem">Programs</p></a>
             <a href="#portfolio"><p id="portfolioNavItem" class="navItem">Portfolio</p></a>
             <a href="#websites"><p id="websitesNavItem" class="navItem">Websites</p></a>
             <a href="#production"><p id="productionNavItem" class="navItem">Production</p></a>
@@ -62,7 +62,7 @@
             <div id="bio"> 	
                 <p>I'm a 19 year old student from Sheffield.</p>
                 <p>I'm studying Computer Science at Uni of York.</p>
-                <p>I've made a <a href="#games">game</a>.</p>
+                <p>I've made a <a href="cluedup.html">game</a>.</p>
                 <p>I make small websites.</p>
                 <p>I'm pretty good with photoshop.</p>
                 <p>My <a href="www.youtube.com" target="_blank">video production</a> is pretty good too.</p>
@@ -75,10 +75,10 @@
             
             
             <div>
-                <a href="#games">
+                <a href="#programs">
                     <div class="tile cyan">
-                        <h3>Games</h3>
-                        <img src="images/games.png" alt="Website design at TobyFox.co.uk" />
+                        <h3>Programs</h3>
+                        <img src="images/programs.png" alt="Projects I've built over time" />
                     </div>
                 </a>
             </div>
@@ -276,38 +276,35 @@
   
   
   
-<!-- - - - - - - - - - - - - - - - - - GAMES - - - - - - - - - - - - - - -->
-<div id="gamesContainer" class="tilePage">
- 		<h2>Games</h2><br /><br />
+<!-- - - - - - - - - - - - - - - - - - PROGRAMS - - - - - - - - - - - - - - -->
+    <div id="programsContainer" class="tilePage">
+        <h2>Programs</h2><br /><br />
+        <p>This is where I host all the little projects and code I've have made. Sort of like a blog. But worse.</p>
         
-        <h3>Clued-Up 1&sdot;01</h3><br /><br />
-        
-        <p>For second year module <em>SEPR</em>, we are required to form a software engineering team and plan, build, test and document a murder mystery-style game based around one of the buildings in the University Of York.</p>
-        
-        <p>I acted as lead developer and programmed most of the game, designed all of the graphics, models & sounds, and wrote the website <a href="http://www.wedunnit.me">wedunnit.me</a></p>
+        <div id="programListDiv">
+            <a href="hashcoe17.html">
+                <h4>Google Hashcode 2017 Entry</h4>
+                <p>My team's code for Hashcode 2017 (second best in the York hub)</p>
+            </a><br /><br />
 
-		<div class="downloadLinks">
-            <a class="gameDownload" href="https://drive.google.com/open?id=0B_EqNPy9-bW0QUY4ZlBGclUteG8">
-                <img src="images/zip-win.png" />
-                <p>Download for Windows <br /> Version: 1.01 <br />Size: 262MB</p>
-            </a>
-            <a class="gameDownload" href="https://drive.google.com/open?id=0B_EqNPy9-bW0QWJJWmoyTjVzTlk">
-                <img src="images/zip-mac.png" /> 
-                <p>Download for Mac <br /> Version: 1.01 <br />Size: 265MB</p>
-            </a>
-            <a class="gameDownload" href="https://drive.google.com/open?id=0BxsYkY4mkZmVbDR2YnBocFRtb2c">
-                <img src="images/zip-linux.png" /> 
-                <p>Download for Linux<br /> Version: 1.01 (untested)<br />Size: 275MB</p>
-            </a>   
-       	</div>
-        
-        <a href="http://wedunnit.me"><img src="images/cluedup-1.png" alt="Screenshot from Clued-up V1.01" /> </a>     
-        
-        
-        
+            <a href="cluedup.html">
+                <h4>Clued-Up 1&sdot;01</h4>
+                <p>A game made during my second year studying Computer Science.</p>
+            </a><br /><br />
+
+            <a href="homicide.html">
+                <h4>Homicide In The Hub 2&sdot;01</h4>
+                <p> Another game made during my second year studying Computer Science.</p>
+            </a><br /><br />
+
+            <a href="#">
+                <h4 style="color:#666">COMING SOON Raspberry Pi Realtime Visualiser</h4>
+                <p>Python script that lights an array of LEDs depending on signal of audio in through the Pi's GPIO.</p>
+            </a><br /><br />
+        </div>
 
 
-</div>
+    </div>
 
 
 
@@ -417,7 +414,7 @@
 	};
 	
 	function changeHash() {	
-		var arrayOfHash = new Array("websites", "portfolio", "qualifications", "production", "cv", "tile", "games");	
+		var arrayOfHash = new Array("websites", "portfolio", "qualifications", "production", "cv", "tile", "programs");	
 		var hashEnd = location.hash.substring(1); // strip the leading # symbol
 			
 		if ($.inArray(hashEnd, arrayOfHash) !== -1){     //if current hash is within the array then...
