@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/*------------------------------------ALL IN MAIN SECTION------------------------------------*/
+
+#introBlock{
+	height:200px;
+}
+
+#guitarHead{
+	width:300px;
+	height:200px;
+	margin-top:10px;
+	margin-left:-60px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+}
+
+#pageContainer{
+	height:1000px;
+}
+
+#records{
+	height:400px;
+	width:700px;
+}
+
+
+/*------------------------------------END OF MAIN SECTION------------------------------------*/
+
+
+
+
+
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2012. HANDCODED SINCE 2012. ------------*/

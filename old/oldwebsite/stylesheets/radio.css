@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/*------------------------------------ALL IN MAIN SECTION------------------------------------*/
+
+#introBlock{
+	height:200px;
+}
+
+#introBlock h3 i{
+	color:#333333;
+}
+
+#introBlock object{
+	position:absolute;
+	left: 570px;
+	top: 30px;
+	border-radius:3px;
+}
+
+#meInStudio{
+	height:270;
+	width:315;
+}
+
+#itunesContainer{
+	width:400px;
+	height:auto;
+	position:absolute;
+	left:470px;
+	top:500px;
+}
+
+#itunesButton{
+	height:80px;
+	width:150px;
+}
+
+
+/*------------------------------------END OF MAIN SECTION------------------------------------*/
+
+
+
+
+
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2012. HANDCODED SINCE 2012. ------------*/

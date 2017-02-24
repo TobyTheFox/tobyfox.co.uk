@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/*------------------------------------ALL IN MAIN SECTION------------------------------------*/
+
+
+#topAdBoxes{
+	padding-right:100px;
+	padding-left:100px;
+	height:205px;
+}
+
+#topAdBoxes ul li div{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	height:205px;
+	width:170px;
+	background-image:url(../images/grad-box.png);
+}
+
+#topAdBoxes ul li div:hover{
+	background-image:url(../images/grad-box-over.png);
+	cursor:pointer;
+}
+
+#topAdBoxes ul li{
+	display:inline;
+}
+
+#topAdBoxes p{
+	margin-top:5px;
+	font-family:Georgia;
+	font-size:14px;
+	color:#333;
+}
+
+#topAdBoxes p strong{
+	font-weight:normal;
+	font-size:20px;
+	color:#000;
+}
+
+#topAdBoxes img{
+	margin-top:10px;
+}
+
+
+
+#firstAdBox{
+	float:left;
+}
+
+#secondAdBox{
+	position:absolute;
+	margin:0 280px 0 280px;
+}
+
+#secondAdBox p{
+	margin-top:30px;
+}
+
+#thirdAdBox{
+	float:right;
+}
+
+#thirdAdBox p{
+	margin-top:23px;
+}
+
+
+
+/*------------------------------------ALL IN RECCOMENDATIONS SECTION------------------------------------*/
+
+
+
+#reccomendationsContainer{
+/*	background-color:#FFFFFF;*/
+	width:1000px;
+	height:auto;
+	margin-top:10px;
+	position:relative;
+
+}
+
+#reccomendationsContent{
+	padding: 5px;
+}
+
+#reccomendationsContent li{
+	list-style:none;
+}
+
+.bubble{
+	height:140px;
+	width:280px;
+}
+#quoteOne{
+	float:left;
+}
+
+#quoteOneName{
+	position:absolute;
+	left: 155px;
+	top: 100px;
+	font-size:16px;
+}
+
+#quoteTwo{
+	/*position:absolute;
+	left: 430px;
+*/}
+
+#quoteTwoName{
+	position:absolute;
+	left: 490px;
+	top: 100px;
+	font-size:16px;
+	width: 170px;
+}
+
+
+#hitcounterBubble{
+	z-index:-1;
+}
+
+#hitcounter{
+	float:right;
+	margin-top:-140px;
+}
+
+#hitContent{
+	margin:-110px 0 0 10px;
+}
+
+#hitcounter p{
+	font-family:georgia;
+	font-size:14px;
+	color:#666666;
+	font-style:italic;
+	margin-top:0px;
+}
+
+#counterScript{
+	position:relative;
+	padding:5px 0 0 5px;
+	margin-top:-15px;
+}
+
+/*------------------------------------END OF RECCOMENDATION SECTION------------------------------------*/
+
+
+#justiceLeagueLeft{
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	margin-top:500px;
+	z-index:500;
+
+
+/*------------------------------------END OF MAIN SECTION------------------------------------*/
+
+
+
+
+
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2012. HANDCODED SINCE 2012. ------------*/

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head>
+
+<title>Toby Fox | Really Affordable Local Website Design</title>
+	<meta name="keywords" content="Toby,Fox,Tobias,Radio,toby fox radio,Toby Fox,Tobias fox,Film,Animation,games,fanclub,vip,cats,rufus,georgie,pepe,guitars,rock,website,best" />
+	<meta name="description" content="I do really nice, really cheap website design and hosting for local small businesses or pretty much anything else. Based in Sheffield." />
+	<meta name="author" content="Toby Fox" />
+	<meta name="copyright" content="Hello there. Please do not copy anything of mine because I don&#39;t like it. Thanks a bunch! &copy;Toby Fox 2014" />
+	<meta http-equiv="Content-Language" content="en-gb" />
+	
+	<link rel="icon" href="favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="favicon.png" type="image/png" />
+    
+	<link rel="stylesheet" href="stylesheets/default.css" type="text/css" />
+ 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+	<!-- Add jQuery library FOR FANCYBOX -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+	
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+	/*RESIZE - - - - - -*/		
+			$(".resizefancy")
+				.fancybox({
+					
+				arrows : true,
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					},
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+				
+    			afterLoad: function(current, previous) {
+        			var $img = current.inner.find('img');
+        			$img.css({width: normaliseWidth($img)});
+    				}
+				});
+
+			function normaliseWidth($img) {
+    			var width = $img.width();
+    			if (width < 1000) { // if smaller then 100px
+        			return (width / 2) +'px'; // blow up to twice the size
+    			} else {
+        			return width +'px';
+    				}
+			}
+			
+		});
+		
+		
+		
+	// slides the laptop in	
+	
+	$(window).ready(function(){
+		$("#laptopImg").animate({
+			opacity:"1",
+    		left: "+=20",
+  		}, 600 
+  	)});
+	
+	//slides text in
+	
+	$(window).ready(function(){
+		$(".slide").delay(1200).animate({
+			opacity:"1",
+    		left: "+=20",
+  		}, 600 
+  	)});
+		
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="slideshow/fadeslideshow.js">
+
+/***********************************************
+* Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [450, 525], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["images/portfolio/xshot1.png", "http://www.xsound.co.uk/index.html", "_new", "Xtreme Sound Systems: Home page"],
+		["images/portfolio/xshot2.png", "http://www.xsound.co.uk/about.html", "_new", "Pop up image boxes, drop down menu"],
+		["images/portfolio/xshot3.png", "http://www.xsound.co.uk/gallery.html", "_new", "xpanding gallery images: "],
+		["images/portfolio/xshot4.png", "http://www.xsound.co.uk/contact.html", "_new", "Working Contact form"] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:4000, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 500, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: ""
+});
+
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
+	dimensions: [450, 311], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["images/portfolio/pjsnew3.jpg", "https://www.pjsmusic.com", "_new", "PJS Music Home pagee"],
+		["images/portfolio/pjsnew4.jpg", "https://www.pjsmusic.com", "_new", "PJS Music product page"]//<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:4000, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 500, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: ""
+});
+
+</script>
+
+
+</head>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - BEGINING OF PAGE- - - - - - - - - - - - - - - - - - - - - - - -->
+
+<body>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - HEADER- - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - NAV BAR - - -->
+  <nav id="fixedbar">
+    <ul id="fixednav">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a class="scroll active" href="#top">Websites</a></li>
+      <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+      <li><a class="scroll" href="#quote">GetAQuote</a></li>
+      <li><a href="index.html#about">About</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Scroll to location code -->
+<script type="text/javascript">
+$(function(){  // $(document).ready shorthand
+  $('#fixedbar').fadeIn('slow');
+});
+</script>
+<script type="text/javascript">
+$(".scroll").click(function (event) {
+    event.preventDefault();
+    //calculate destination place
+    var dest = 0;
+    if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+        dest = $(document).height() - $(window).height();
+    } else {
+        dest = $(this.hash).offset().top;
+    }
+    //go to destination
+    $('html,body').animate({
+        scrollTop: dest
+    }, 500, 'swing');
+});
+</script>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - MAIN BODY- - - - - - - - - - - - - - - - - - - - - - -->
+<a id="top"></a> 
+<div id="blackBox">
+</div>
+
+<div id="webIntro" >
+ 	<div>  
+  		<img src="images/fox-laptop.png" id="laptopImg" alt="Fox on my website" height="500px"  />	<!-- style="float:left;-->
+	</div>
+	
+	<div id="webIntroText" class="slide">
+  		<h1>Simplistic</h1>
+		<h2>Clean and affordable wesites right here.</h2>      
+	</div>    
+</div>
+ 
+ 
+<a id="portfolio"></a>   <!-- portfolio PAGE BOX -->
+<div id="portfolioBox" >
+ 	<div style="padding-top:70px; margin-left:100px;" class="scroll1">
+  		<h1>Portfolio</h1>
+		<h2>Xtreme Sound Systems</h2>
+        <table>
+        	<tr>
+        		<td style="padding-bottom:10px"><div id="fadeshow1"></div></td>
+        		<td style="padding-bottom:10px" class="textTd">This is the website <a href="http://www.xsound.co.uk">XSound.co.uk</a> which was designed for <em>Xtreme Sound Systems</em>. <br /> <br /> It features my best work: moving galleries, drop down menus on the <em>about</em> page, and a nice, clean interface. Please click the images to jump to that page.</td>
+          	</tr>
+            <tr><td colspan="2"><hr style="width:80%; color:#638682; border:dashed thin"></td></tr>
+            <tr>
+                <td style="padding-top:10px"><div id="fadeshow2"></div><img id="pjsLogoImg" src="images/portfolio/pjsmusiclogo.png" height="200px" /></td>
+                <td style="padding-top:10px" class="textTd">This is the website <a href="http://www.pjsmusic.com">pjsmusic.com</a> which was designed for <em>PJS Music</em> in Dodworth, Barnsley. <br /> <br /> While I only co-designed the shopping cart functionality, the home page and layouts are my work. Please click the image to jump to PJS Music. <br /><br /> All of the graphics you see on this site were created by me, including the logo.</td>
+                
+          	
+      	</table>
+    </div>
+</div>
+
+<a id="quote"></a>   <!-- about PAGE BOX -->
+<div id="quoteBox" >
+	<div style="padding-top:70px; margin-left:100px;" class="scroll1">
+  		<h1>Get A Quote</h1>
+		<h2>Fill in the form as accurately as possible</h2> 
+        <p>Included with your personalised website are email addresses, web hosting and free occasional updates. Just complete the form below with additional information so I can get a good feel of what you're after, and you can expect a reply within 48 hrs.</p>
+        <p><br />Thank you in advance: building a site with me is supporting a young student in the UK.</p>       
+        <p style="font-size:14px; color:#75738E">* Please note, shopping-cart style websites are not yet available, and due to my hectic day-to-day life, websites should be a maximum of 4 pages long.</p>  
+        
+    </div>
+
+<form name="contactform" method="post" action="form-submit.php" id="contactForm"> 
+<table width="100%">
+	<tr>
+ 		<td valign="top" class="formLabel">
+			<label for="name">Name *</label>
+		</td>
+ 		<td valign="top">
+  		  	<input class="formField" type="text" name="name" maxlength="50" size="30">
+ 		</td>
+	</tr>
+ 
+	<tr>
+		<td valign="top" class="formLabel">
+			<label for="email">Email Address *</label>
+    	</td>
+ 		<td valign="top">
+ 			<input class="formField" type="text" name="email" maxlength="50" size="30">
+ 		</td>
+ 	</tr>
+    <tr>
+    	<td class="formLabel" valign="top">
+        	<label for="prefer">Style *</label>
+      	</td>
+    	<td valign="top">
+        	<div class="selectDiv">
+        	<select name="prefer" >
+     			<option value="">Which site did you prefer?</option>
+     			<option value="tobyfox.co.uk">This Website</option>
+     			<option value="xsound.co.uk">www.xsound.co.uk</option>
+     			<option value="pjsmusic.com">www.PJSmusic.com</option>
+  			</select>
+            </div>
+  		</td>
+    </tr>
+    <tr>
+		<td valign="top" class="formLabel">
+			<label for="features">Optional Features *</label>
+            <p style="font-size:14px">If you don't want any other features please select &#39;none&#39;</p>
+    	</td>
+ 		<td valign="top">
+ 			<input id="galleryCheck" class="checkbox" type="checkbox" name="features[]" value="gallery"><label for="galleryCheck" class="checkbox-label">Photo Gallery (add £5)</label>
+            <input id="formCheck"class="checkbox" type="checkbox" name="features[]" value="contactform"><label for="formCheck" class="checkbox-label">Contact Form (add £15)</label>
+            <input id="scrollCheck"class="checkbox" type="checkbox" name="features[]" value="animatedscroll"><label for="scrollCheck" class="checkbox-label">Animated Scrolling (add £5)</label>
+            <input id="seoCheck"class="checkbox" type="checkbox" name="features[]" value="seo"><label for="seoCheck" class="checkbox-label">Search Engine Optimisation (add £15)</label><br /><br />
+            <input id="noneCheck"class="checkbox" type="checkbox" name="features[]" value="none"><label style="margin-bottom:5px;" for="noneCheck" class="checkbox-label">None</label>
+
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td class="formLabel" style="vertical-align:top; padding-right:3px;">
+ 			<label for="comments">Comments *</label>
+             <p style="font-size:14px">Please describe exactly what is needed for this website, qnd I'll send you a quote. Additional details including your text for the website and images are sent to me at a later date.</p>
+           
+ 		</td>
+ 		<td>
+ 			<textarea  name="comments" maxlength="1000" class="formTextField"></textarea>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td colspan="2" style="text-align:center">
+            <input type="submit" value="Submit" class="submitButton"> 
+        </td>
+	</tr>
+</table>
+</form>
+</div>
+
+
+
+
+
+<div id="footerBox">
+    	<ul>
+    		<li><p style="width:100%; height:auto;">&copy; Toby Fox 2008-2014</p></li>
+			<li><p style="width:100%; height:auto;"><a id="toTop" class="scroll" href="#home">Back to Top</a></p></li>
+            <li>
+              <p style="width:100%; height:auto;" id="reccomendedLinks">Recommended Links: <a href="http://www.pjsmusic.com" target="_blank">PJS Music</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.seventh-son.co.uk" target="_blank">Seventh Son</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.mychildcare.co.uk" target="_blank">mychildcare</a></p></li>
+       	</ul>
+        <p style="float:right; display:inline-block; margin:-40px 60px 0 0; font-size:12px;"><a href="changelog.html" class="fancybox fancybox.iframe">Changelog</a></p>
+</div>
+
+
+
+
+
+
+<!-- Loads DIV when Scrollbar moves to 50px -->
+<script type="text/javascript">
+
+    $(window).scroll( function() {
+        if ( $(window).scrollTop() > 50 ) {
+           loadDiv2(); 
+        }
+    });
+ 
+    function loadDiv2() {
+        $('.scroll1').fadeIn('slow', function() {
+            $(this).fadeTo("slow", 1);
+        });
+    }
+</script>
+
+
+</body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - END OF WEBSITE. THIS CODE IS COPYRIGHT (C) OF TOBY FOX 2014.- - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+</html>

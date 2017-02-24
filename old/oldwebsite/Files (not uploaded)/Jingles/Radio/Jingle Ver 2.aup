@@ -1,0 +1,94 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Jingle Ver 2_data" version="1.3.0" audacityversion="1.3.13-beta" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="65.3083401250" rate="16000.0">
+	<tags>
+		<tag name="COMMENTS" value="Made with Sony ACID Music Studio 6.0"/>
+	</tags>
+	<wavetrack name="Radio automated board" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" rate="16000" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="294480">
+				<waveblock start="0">
+					<pcmaliasblockfile summaryfile="e0000feb.auf" aliasfile="C:\Users\Toby\tobyfox.co.uk\Jingles\Radio\Radio automated board.wav" aliasstart="0" aliaslen="262144" aliaschannel="0" min="-0.65744" max="0.6716" rms="0.114471"/>
+				</waveblock>
+				<waveblock start="262144">
+					<pcmaliasblockfile summaryfile="e0000994.auf" aliasfile="C:\Users\Toby\tobyfox.co.uk\Jingles\Radio\Radio automated board.wav" aliasstart="262144" aliaslen="32336" aliaschannel="0" min="-0.547943" max="0.38858" rms="0.081398"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Radio music fin" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="352485">
+				<waveblock start="0">
+					<simpleblockfile filename="e000060e.au" len="176242" min="-0.154882" max="0.150415" rms="0.026225"/>
+				</waveblock>
+				<waveblock start="176242">
+					<simpleblockfile filename="e000058f.au" len="176243" min="-0.154882" max="0.140829" rms="0.023406"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="7.99285714">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="459176">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000799.au" len="262144" min="-0.154736" max="0.134643" rms="0.020345"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000c72.au" len="197032" min="-0.03398" max="0.031757" rms="0.003946"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Radio music fin" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="352485">
+				<waveblock start="0">
+					<simpleblockfile filename="e00006f9.au" len="176242" min="-0.154882" max="0.154877" rms="0.025882"/>
+				</waveblock>
+				<waveblock start="176242">
+					<simpleblockfile filename="e0000459.au" len="176243" min="-0.154882" max="0.154877" rms="0.024442"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="7.99285714">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="459176">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000940.au" len="262144" min="-0.154737" max="0.15478" rms="0.020357"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000c42.au" len="197032" min="-0.04481" max="0.031397" rms="0.00429"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Radio music fin" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="18.40500000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="187740">
+				<waveblock start="0">
+					<simpleblockfile filename="e000001e.au" len="171803" min="-0.391388" max="0.376343" rms="0.065269"/>
+				</waveblock>
+				<waveblock start="171803">
+					<pcmaliasblockfile summaryfile="e000009d.auf" aliasfile="" aliasstart="524288" aliaslen="15937" aliaschannel="0" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Radio music fin" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="18.40500000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="187740">
+				<waveblock start="0">
+					<simpleblockfile filename="e00004a4.au" len="171803" min="-0.472534" max="0.437317" rms="0.078156"/>
+				</waveblock>
+				<waveblock start="171803">
+					<pcmaliasblockfile summaryfile="e0000caf.auf" aliasfile="" aliasstart="524288" aliaslen="15937" aliaschannel="1" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

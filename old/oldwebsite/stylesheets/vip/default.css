@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	/*background-color:#CCC;*/
+	background-image:url(../../vip/images/linentile.png);
+	background-repeat:repeat;
+}
+
+/*------------------------------------ALL IN MAIN SECTION------------------------------------*/
+
+.header{
+	height:80px;
+}
+
+#logo{
+	height:80px;
+}
+
+#navDiv{
+	top:-80px;
+}
+
+/*-------------------------VIP NAVBAR-------------------------*/
+
+
+
+#vipNavDiv{
+	position:absolute;
+	background-color:#333;
+	width:100%;
+	margin-top:-22px;
+	margin-left:-50px;
+	box-shadow: 0px -px 10px -5px black;
+    -webkit-box-shadow: 0px 3px 10px -5px black;
+    -moz-box-shadow: 0px 3px 10px -5px black;
+}
+
+#vipNavbar{
+	margin-top:0px;
+	margin-left:260px;
+	width:100%;
+
+}
+
+#vipNavbar li { 
+	display: inline; 
+	list-style:none;
+
+}
+
+#vipNavbar li a{
+	padding: 0.2em 1em;
+	background-color:#333;
+	color:#FFF;
+	float: left;
+	text-decoration: none;
+	font-size:12px;
+	font-family:Calibri, Arial, helvetica, sans-serif;
+	padding-top: 8.5px;
+	padding-bottom:8.5px;
+}
+
+#vipNavbar li a:hover{
+	background-color: #555;
+	text-decoration:underline;
+	color:#FFF;
+}
+
+
+/*-----------------------END OF NAVBAR------------------------*/
+
+#pageContainer{
+	margin-top:120px;
+}
+
+
+
+
+/*------------------------------------END OF MAIN SECTION------------------------------------*/
+
+
+
+
+
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2012. HANDCODED SINCE 2012. ------------*/

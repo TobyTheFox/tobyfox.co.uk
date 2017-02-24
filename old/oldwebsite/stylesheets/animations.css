@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/*------------------------------------ALL IN MAIN SECTION------------------------------------*/
+
+#introBlock{
+	height:200px;
+}
+
+#animeHead{
+	width:300px;
+	height:200px;
+	position:absolute;
+	top: 29px;
+	left: 625px;
+}
+
+#filmList div{
+	list-style:none;
+	display:inline-block;
+	position:relative;
+	text-align:center;
+}
+
+#filmList img{
+	width:300px;
+	height:225px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor:pointer;
+}
+
+.filmLeft{
+
+	margin-left:100px;
+}
+
+.filmRight{
+	float:right;
+	margin-right:100px;
+}
+
+#filmUnder{
+	margin-top:50px;
+}
+
+/*------------------------------------END OF MAIN SECTION------------------------------------*/
+
+
+
+
+
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2012. HANDCODED SINCE 2012. ------------*/

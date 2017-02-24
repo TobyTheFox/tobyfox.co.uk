@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<head>
+
+<title>The Official Toby Fox Web Design Web Page</title>
+	<meta name="keywords" content="Toby,Fox,Tobias,Radio,toby fox radio,Toby Fox,Tobias fox,Film,Animation,games,fanclub,vip,cats,rufus,georgie,pepe,guitars,rock,website,best" />
+	<meta name="description" content="The official website of Toby Fox: TobyFox.co.uk is the home of all things Tobias-like. I do really cheap personal and small business web design." />
+	<meta name="author" content="Toby Fox" />
+	<meta name="copyright" content="Hello there. Please do not copy anything of mine because I don&#39;t like it. Thanks a bunch! &copy;Toby Fox 2015" />
+	<meta http-equiv="Content-Language" content="en-gb" />
+	
+	<link rel="icon" href="favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="favicon.png" type="image/png" />
+    
+	<link rel="stylesheet" href="stylesheets/default.css" type="text/css" />
+ 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+	<!-- Add jQuery library FOR FANCYBOX -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+	
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+	/*RESIZE - - - - - -*/		
+			$(".resizefancy")
+				.fancybox({
+					
+				arrows : true,
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					},
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+				
+    			afterLoad: function(current, previous) {
+        			var $img = current.inner.find('img');
+        			$img.css({width: normaliseWidth($img)});
+    				}
+				});
+
+			function normaliseWidth($img) {
+    			var width = $img.width();
+    			if (width < 1000) { // if smaller then 100px
+        			return (width / 2) +'px'; // blow up to twice the size
+    			} else {
+        			return width +'px';
+    				}
+				}
+	/*VIMEO - - - - - -*/	
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+		});
+		
+	//text slides in	
+	$(window).ready(function(){
+		$(".slide").delay(800).animate({
+			opacity:"1",
+    		left: "+=20",
+  		}, 600 
+  	)});	
+		
+	</script>
+	
+<!--Tracking Code-->
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-15065585-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+
+
+</head>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - BEGINING OF PAGE- - - - - - - - - - - - - - - - - - - - - - - -->
+
+<body id="indexBody">
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - HEADER- - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - NAV BAR - - -->
+  <nav id="fixedbar">
+    <ul id="fixednav">
+      <li><a class="scroll" href="#home">Home</a></li>
+      <li><a class="web" href="websites.html">Websites</a></li>
+      <li><a class="scroll" href="#aboutMe">About</a></li>
+      <li><a class="scroll" href="#radio">Radio</a></li>
+      <li><a class="scroll" href="#animations">Animations</a></li>
+      <li><a class="scroll" href="#about">About</a></li>
+    </ul>
+  </nav>
+  <!-- Scroll to location code -->
+<script type="text/javascript">
+$(function(){  // $(document).ready shorthand
+  $('#fixedbar').fadeIn('slow');
+});
+
+$(".scroll").click(function (event) {
+    event.preventDefault();
+    //calculate destination place
+    var dest = 0;
+    if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+        dest = $(document).height() - $(window).height();
+    } else {
+        dest = $(this.hash).offset().top;
+    }
+    //go to destination
+    $('html,body').animate({
+        scrollTop: dest
+    }, 500, 'swing');
+});
+</script>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - MAIN BODY- - - - - - - - - - - - - - - - - - - - - - -->
+<a id="home"></a>
+<div id="blackBox">
+</div>
+
+<div id="box1" class="box">    <!-- HOME PAGE BOX -->
+ 
+	<div>  
+  		<a href="websites.html"><img id="foxImg" src="images/foxtrans.png" alt="Toby Fox's Foxes" height="800px" style="float:left;" /></a>
+	</div>
+	<div id="introText" style="margin-top:300px; padding:0 50px 50px 0;" class="slide">
+  		<h1>Web Design</h1>
+		<h2>I do extremely affordable web design. Click the fox.</h2>      
+	</div>
+    
+</div>
+
+
+<a id="aboutMe"></a>
+<div id="box2" class="box">
+	<div style="padding-top:70px; margin:0 100px;" class="scroll1">
+    	<h1>About me</h1>
+        <h2>Who am I? What do I do?</h2>
+        <p>My name is Tobias Enefey Fox, and I'm a student currently doing his A levels. Here is a little bit of information about myself. <span style="font-style:italic">Please note: clicking highlighted parts of the text will show relavant images. They can all be seen below too.</span><p><br />
+        <p>I was born in Sheffield, whereI still live, and at a young age I took an interest in <a title="My first computer looked like this. Windows XP with only a 6GB HHD." class="resizefancy" href="images/aboutme/oldPC.jpg">computers &amp; technology</a>, as well as <a title="My first ever CD" class="resizefancy" href="images/aboutme/maidenCDLarge.jpg">music</a>. At around 7 years old I was bought a <a title="It was this model" class="resizefancy" href="images/aboutme/firstGuitarLarge.jpg">guitar</a>, and I have been learning since.</p><br />
+        <p>In 2011 I learned HTML and started building upon my website. This is also about when I got my <a title="This was my first Gibson. Les PAul Studio 50s Tribute." class="resizefancy" href="images/aboutme/firstGibsonLarge.jpg">first Gibson guitar</a>. In 2013 I went to <a title="Toby Fox on holiday." class="resizefancy" href="images/aboutme/sicilyLarge.jpg">Sicily</a> hours before the Mt. Etna erruptions which I feel somewhat proud about. This is also the year I asked Lauren to <a title="(She said yes)" class="resizefancy" href="images/aboutme/promLarge.jpg">prom</a>.</p><br />
+        <p>On the day of prom (coincidently my 16th birthday) I was offered work maintaining and designing an ecommerce website for <a title="The exterior of PJS Music." class="resizefancy" href="images/aboutme/pjsLarge.jpg">PJS Music</a> in Dodworth, Barnlsley, and also working for a sound engineering company.</p><br/>
+        <p>I got my GCSE results (a mixure of A*s and As, and a B) and headed off to Barnsley, where my favourate lesson was of course Computing. When it came to university choices I picked the University of York for its stunning Comp. Sci. course, for which I accepted their offere of a place. Then came the A level exams. TBC.</p>
+    	<div id="aboutImgScroller">
+        	<a title="My first computer looked like this. Windows XP with only a 6GB HHD." rel="aboutGallery" class="resizefancy" href="images/aboutme/oldPC.jpg"><img alt="This looked a bit like my first PC" src="images/aboutme/oldPC.png" /></a>
+        	<a title="My first ever CD" rel="aboutGallery" class="resizefancy" href="images/aboutme/maidenCDLarge.jpg"><img alt="My first ever CD" src="images/aboutme/maidenCD.png" /></a>
+            <a title="First guitar" rel="aboutGallery" class="resizefancy" href="images/aboutme/firstGuitarLarge.jpg"><img alt="Silver dean playmate guitar" src="images/aboutme/firstGuitar.png" /> </a> 
+            <a title="First Gibson" rel="aboutGallery" class="resizefancy" href="images/aboutme/firstGibsonLarge.jpg"><img alt="Les Paul Studio 50s Tribute Goldtop" src="images/aboutme/firstGibson.png" /> </a> 
+            <a title="Mt Etna" rel="aboutGallery" class="resizefancy" href="images/aboutme/sicilyLarge.jpg"><img alt="Mt. Etna" src="images/aboutme/sicily.jpg" /> </a>
+            <a title="Pizza Invite" rel="aboutGallery" class="resizefancy" href="images/aboutme/promLarge.jpg"><img alt="Invite by pizza" src="images/aboutme/prom.jpg" /> </a>  
+            <a title="PJS music" rel="aboutGallery" class="resizefancy" href="images/aboutme/pjsLarge.jpg"><img alt="The small business of PJS Music" src="images/aboutme/pjs.jpg" /> </a> 
+        </div>  
+    </div>   
+</div>
+
+
+
+
+<a id="radio"></a>   <!-- RADIO PAGE BOX -->
+<div id="box3" class="box">
+	<div style="padding-top:70px; margin-left:100px; padding-right:100px" class="scroll1">
+  		<h1>Toby Fox RADIO</h1>
+		<h2>It used to be <span style="color:#999">rad</span>.</h2>  
+        <div id="radioText">    
+			<p><span class="i">Toby Fox RADIO spanned from Sept 2010 to August 2011 and contained many long-winded and drawn out anecdotes/ sketches from a prepubescent Toby.</span>
+        	<br />
+            <br />
+        	It is still available on iTunes for free, but its future is uncertain.</p>
+            
+            <a href="http://itunes.apple.com/gb/podcast/toby-fox-radio/id547648706?mt=2&uo=4" target="_blank"><img id="ituneButton" src="images/itunes-button.png" alt="Toby Fox Radio on iTunes" onMouseOver="this.src='images/itunes-button-over.png'" onMouseOut="this.src='images/itunes-button.png'" /> </a>
+        </div>
+        <div id="radioPicBox">
+        	<div>
+        		<a title="Toby Fox in Toby Fox Radio's Heyday." class="resizefancy" href="images/radioLogo2013Lrg.jpg"><img id="radioPic" alt="Back in TFR's Heyday" src="images/radioLogo2013.jpg" onMouseOver="this.src='images/radioLogo2013Ov.jpg'" onMouseOut="this.src='images/radioLogo2013.jpg'" /></a>
+            	<p>Back in TF RADIO's heyday.</p>
+        	</div>
+      	</div>  
+	</div> 	     
+</div>
+</div>
+
+
+
+
+
+
+<a id="links"></a>    
+<div id="box4" class="box">      <!-- Links PAGE BOX -->
+	<div style="padding-top:70px; margin-left:100px;" class="scroll1">
+  		<h1>Links</h1>
+		<h2>Where you can find me</h2>  
+        <div id="linksBox">
+  			<a href="https://www.facebook.com/TobyFox.co.uk" target="_blank"><img id="fbIco" alt="Find me on Facebook!" src="images/fbIco.png" onMouseOver="this.src='images/fbIcoOv.png'" onMouseOut="this.src='images/fbIco.png'"/> </a>
+            <a href="http://twitter.com/tobythef0x" target="_blank"><img id="twtIco" alt="Find me on twitter @TobyTheF0x" src="images/twtIco.png" onMouseOver="this.src='images/twtIcoOv.png'" onMouseOut="this.src='images/twtIco.png'"/> </a>
+            <a href="http://instagram.com/tobythefox" target="_blank"><img id="insIco" alt="Find me on Instagram @TobyTheFox" src="images/instIco.png" onMouseOver="this.src='images/instIcoOv.png'" onMouseOut="this.src='images/instIco.png'"/></a>
+        </div>
+          
+	</div> 	     
+</div>
+
+
+
+
+
+
+
+
+<a id="animations"></a>
+<div id="box5" class="box">
+	<div style="padding-top:70px; margin-left:100px;" class="scroll1">
+  		<h1>Animations</h1>
+		<h2>Short films by Toby Fox - Just click the links!</h2>  
+    
+        <div id="filmLinksBox">
+        	<p><a class="fancybox-media i" href="http://vimeo.com/46617249">'Trunk Busters to the rescue'</a>, 2009</p>
+        	<br />
+        	<p><a class="fancybox-media i" href="http://vimeo.com/46617247">'A Night in The Blitz'</a>, 2009</p>
+        	<br />
+        	<p><a class="fancybox-media i" href="http://vimeo.com/46617248">'Alien Cow Abduction'</a>, 2009</p>
+        	<br />
+        	<p><a class="i" href="http://www.tobyfox.co.uk/thefox/index.html">'Global Fashion Project'</a>, 2010</p>
+        </div>
+        
+        <div id="filmPicBox">
+    		<table id="filmPicTable">
+        		<tr>
+            		<td><a class="fancybox-media" href="http://vimeo.com/46617249"><img src="images/film1.png" alt="Trunkbusters to the rescue" onmouseover="this.src='images/film1Ov.png'" onmouseout="this.src='images/film1.png'" /></a></td>
+                	<td><a class="fancybox-media" href="http://vimeo.com/46617247"><img src="images/film2.jpg" alt="Night in the blitz" onmouseover="this.src='images/film2Ov.jpg'" onmouseout="this.src='images/film2.jpg'" /></a></td>
+            		<td><a class="fancybox-media" href="http://vimeo.com/46617248"><img src="images/film3.jpg" alt="Alien Cow Abduction" onmouseover="this.src='images/film3Ov.jpg'" onmouseout="this.src='images/film3.jpg'" /></a></td>
+            		<td><a href="http://www.tobyfox.co.uk/thefox/index.html"><img src="images/film4.png" alt="Toby Fox's Geography Project" onmouseover="this.src='images/film4Ov.png'" onmouseout="this.src='images/film4.png'" /></a></td>    
+         		</tr>
+      		</table>            
+    	</div>
+	</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<a id="about"></a>
+<div id="box6" class="box">      <!-- ABOUT PAGE BOX -->
+	<div style="padding-top:70px; margin-left:100px;" class="scroll1">
+  		<h1>About</h1>
+		<h2>ToyFox.co.uk since 2008</h2>  
+        <div id="aboutCont" style="padding-bottom:40px;">
+        	<p style="margin-top:20px;">Created in 2008 in a long-lost program called <span class="i">'Serif Webplus 9'</span> TobyFox.co.uk has remained relatively boring from the very start.<br/>
+            <br />
+            I'm based in Sheffield and have developed a handful of websites for local businesses including <a href="http://www,pjsmusic.co.uk">PJS Music</a> and <a href="http://www.xsound.com">Xtreme Sound Systems</a>. Please have a look and consider me if youre looking for a nice website.
+            <br />
+            <br />
+            To view a 2012 legacy version of the site click <a href="oldwebsite/index.html">here</a>.
+            </p>
+            <h2 style="margin-top:20px;">Credits</h2>
+            <p>
+            <span class="b">Web Design: </span><a href="images/tobySuit1.jpg" class="resizefancy"><span class="i">Toby Fox </span></a> <br />
+            <span class="b">Graphic Design: </span><a href="images/tobySuit2.jpg" class="resizefancy"><span class="i">Toby Fox </span></a> <br />
+            <span class="b">Web Development: </span><a href="images/tobySuit3.jpg" class="resizefancy"><span class="i">Toby Fox </span></a> <br />
+            <span class="b">Promotion: </span><a href="images/tobySuit4.jpg" class="resizefancy"><span class="i">Toby Fox </span></a> <br />
+            </p>
+            
+            
+        </div>
+       	</div>
+</div>
+
+
+
+
+
+<div id="footerBox">
+    	<ul>
+    		<li><p style="width:100%; height:auto;">&copy; Toby Fox 2008-2014</p></li>
+			<li><p style="width:100%; height:auto;"><a id="toTop" class="scroll" href="#home">Back to Top</a></p></li>
+            <li><p style="width:100%; height:auto;" id="reccomendedLinks">Reccomended Links: <a href="http://www.pjsmusic.com" target="_blank">PJS Music</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.seventh-son.co.uk" target="_blank">Seventh Son</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.mychildcare.co.uk" target="_blank">mychildcare</a></p></li>
+       	</ul>
+        <p style="float:right; display:inline-block; margin:-40px 60px 0 0; font-size:12px;"><a href="changelog.html" class="fancybox fancybox.iframe">Changelog</a></p>
+</div>
+
+
+
+
+
+
+<!-- Loads DIV when Scrollbar moves to 50px -->
+<script type="text/javascript">
+
+    $(window).scroll( function() {
+        if ( $(window).scrollTop() > 50 ) {
+           loadDiv2(); 
+        }
+    });
+ 
+    function loadDiv2() {
+        $('.scroll1').animate({
+			opacity:"1",
+  		}, 600 
+  	)};
+</script>
+
+
+
+
+
+
+<!-- 
+    	        <div style="margin-top:-20px;">
+        	    
+  					<audio controls autoplay height="50px" width="80px">
+  						<source src="radio/long-jingle.wav" type="audio/wav" />
+						<embed height="50px" width="80px" src="long-jingle.wav" />
+					</audio>
+            	</div>
+        	</div>
+   
+-->		
+
+
+
+
+</body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - END OF WEBSITE. THIS CODE IS COPYRIGHT (C) OF TOBY FOX 2015.- - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+</html>

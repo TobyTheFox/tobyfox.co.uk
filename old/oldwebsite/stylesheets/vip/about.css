@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*------------------------------------ALL IN MAIN SECTION------------------------------------*/
+
+#introBlock{
+	height:200px;
+}
+
+/*
+#headerImg{
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	left: 650px;
+	top: 20px;
+}*/
+
+#headerSwf{
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	left: 650px;
+	top: 20px;
+}
+
+#timelineContainer{
+	height:500px;
+	overflow:scroll;
+	border:1px solid #999;
+}
+
+#timelineContainer img{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#changelogIframe{
+	width:300px;
+	height:200px;
+	border:1px solid #999;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#changelogInfo{
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	left: 350px;
+	top: 1080px;
+}
+
+/*------------------------------------END OF MAIN SECTION------------------------------------*/
+
+
+
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2012. HANDCODED SINCE 2012. ------------*/

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>
+
+<title>The Official website of Toby Fox, tobyfox.co.uk!</title>
+	<meta name="keywords" content="Toby,Fox,Tobias,Radio,toby fox radio,Toby Fox,Tobias fox,Film,Animation,games,fanclub,vip,cats,rufus,georgie,pepe,guitars,rock,website,best" />
+	<meta name="description" content="The official website of Toby Fox. tobyfox.co.uk is the home for games, animations and all things Tobias-like." />
+	<meta name="author" content="Toby Fox" />
+	<meta name="copyright" content="Hello there. Please do not copy anything of mine because I don&#39;t like it. Thanks a bunch! &copy;Toby Fox 2012" />
+	<meta http-equiv="Content-Language" content="en-gb" />
+	
+	<link rel="icon" href="./favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="./favicon.png" type="image/png" />
+    
+	<link rel="stylesheet" href="stylesheets/default.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/index.css" type="text/css"  />
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+
+<!--This is for encrypted email address-->
+
+<script type="text/javascript">
+// This script is (c) copyright 2008 by Dan Appleman under the
+// GNU General Public License (http://www.gnu.org/licenses/gpl.html)
+// This script is modified from an original script by Jim Tucek
+// For more information, visit www.danappleman.com 
+
+
+var decryption_cache = new Array();
+
+function decrypt_string(crypted_string,n,decryption_key,just_email_address) {
+	var cache_index = "'"+crypted_string+","+just_email_address+"'";
+
+	if(decryption_cache[cache_index])					
+		return decryption_cache[cache_index];				
+
+	if(addresses[crypted_string])						
+		var crypted_string = addresses[crypted_string];			
+
+	if(!crypted_string.length)						
+		return "Error, not a valid index.";
+
+	if(n == 0 || decryption_key == 0) {					
+		var numbers = crypted_string.split(' ');			
+		n = numbers[0];	decryption_key = numbers[1];			
+		numbers[0] = ""; numbers[1] = "";				
+		crypted_string = numbers.join(" ").substr(2);
+	}
+
+	var decrypted_string = '';
+	var crypted_characters = crypted_string.split(' ');
+
+	for(var i in crypted_characters) {
+		var current_character = crypted_characters[i];
+		var decrypted_character = exponentialModulo(current_character,n,decryption_key);
+		if(just_email_address && i < 7)				
+			continue;
+		if(just_email_address && decrypted_character == 63)	
+			break;
+		decrypted_string += String.fromCharCode(decrypted_character);
+	}
+		decryption_cache[cache_index] = decrypted_string;
+
+	return decrypted_string;
+}
+
+function decrypt_and_email(crypted_string,n,decryption_key) {
+	if(!n || !decryption_key) { n = 0; decryption_key = 0; }
+	if(!crypted_string) crypted_string = 0;
+
+	var decrypted_string = decrypt_string(crypted_string,n,decryption_key,false);
+	parent.location = decrypted_string;
+}
+
+function decrypt_and_echo(crypted_string,n,decryption_key) {
+	if(!n || !decryption_key) { n = 0; decryption_key = 0; }
+	if(!crypted_string) crypted_string = 0;
+
+	var decrypted_string = decrypt_string(crypted_string,n,decryption_key,true);
+	document.write(decrypted_string);
+	return true;
+}
+
+function exponentialModulo(base,exponent,y) {
+	if (y % 2 == 0) {
+		answer = 1;
+		for(var i = 1; i <= y/2; i++) {
+			temp = (base*base) % exponent;
+			answer = (temp*answer) % exponent;
+		}
+	} else {
+		answer = base;
+		for(var i = 1; i <= y/2; i++) {
+			temp = (base*base) % exponent;
+			answer = (temp*answer) % exponent;
+		}
+	}
+	return answer;
+}
+
+
+ if(!addresses) var addresses = new Array();
+addresses.push("5633 5623 5200 5525 2248 3018 2657 1303 3626 2657 1303 4806 2720 35 2657 1303 4806 2720 5164 1303 534 1854 4954 1303 1854 4912 1755 3314 1316 4912 4806 1078 4830 4954 2657 1363 5151 5526 2083 2248 1316 1105 5526 2657 1303 5526 158 4830 3898 1303 158 2657 5526 5525 5526 4806 4912 3670");
+</script>
+
+
+<!--Tracking Code-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15065585-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - BEGINING OF PAGE- - - - - - - - - - - - - - - - - - - - - - - -->
+
+<body>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - HEADER- - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<div class="header">
+
+	<a href="index.html">
+    <img src="images/logo-nav.png" alt="tobyfox.co.uk's new logo! U like?"  id="logo" />    </a>
+	
+    
+    <div id="navDiv">
+		<ul id="navbar">
+    		<li><a class="navActive" href="index.html">Home</a></li>
+            <li><a href="radio.html">Radio</a></li>      
+        	<li><a href="links.html">Social</a></li>
+            <li><a href="animations.html">Animations</a></li>
+			<li><a href="vip/index.html">VIP Lounge</a></li>
+		</ul>
+ 	</div>        
+  
+        
+
+
+</div>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - MAIN BODY- - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="topsocialbox">
+
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Ftobyfox.co.uk&amp;send=false&amp;layout=box_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=90&amp;appId=180364502041412" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:90px;" allowtransparency="true"></iframe>
+
+
+<a href="https://twitter.com/TobyTheF0x" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" data-lang="en">Follow</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<p class="topSocialText">@TobyTheF0x</p>
+
+<br />
+<g:plusone size="standard" width="120px" count="false" href="http://www.tobyfox.co.uk"></g:plusone>
+
+
+</div>
+
+
+<div align="center"> <!--Makes everything center aligned-->
+
+
+
+<div id="pageContainer">
+
+	<div class="page" align="left">
+    
+		<div id="introBlock">
+    	
+	  		<div style="width:500px; float:left; margin-top:-20px;">
+        
+       			<h1>Welcome to TobyFox.co.uk <br /> </h1>
+	        	<h3 style="color:#CCCCCC">Website. Radio. <em>Everything</em>.</h3>
+       	  
+          	
+                     
+            
+    	        <div style="margin-top:-20px;">
+        	    
+  					<audio controls autoplay height="50px" width="80px">
+  						<source src="radio/long-jingle.wav" type="audio/wav" />
+						<embed height="50px" width="80px" src="long-jingle.wav" />
+					</audio>
+            	</div>
+        	</div>
+        
+                
+            
+        	<div id="animatedMeDiv">  
+            
+   				<img src="images/rotating-me.gif" alt="That's me, Toby Fox. Nice meeting you!" width="370px" height="320px" style="display:inline; margin-top:0px; z-index:2" />	
+                
+            </div>
+		</div>	<!--CLOSED DIV "introBlock"-->
+        
+        
+        
+      
+
+    
+<!-- - - - - - - - - - - - - - - - - - - - - -  END OF INTRO BLOCK. MAIN SITE START- - - - - - - - - - - - - - - - - - - - - - -->
+    
+    
+    
+    
+   
+    
+    	<h3>This is my website. Reimagined. Again.</h3>
+       
+		<div id="topAdBoxes">
+        	<ul>
+            	<li>
+            		<a href="radio.html">
+            			<div id="firstAdBox" align="center">
+                            <img src="images/radio-small.png" alt="Toby Fox Radio" width="110" height="115" /> 
+                            
+                            <p><strong>Toby Fox Radio:</strong> Listen to me 24 hours a day!</p>                               
+                		</div>
+					</a>
+             	</li>
+                
+            
+				<li>
+                  	<a href="vip/index.html">
+        		 		<div id="secondAdBox" align="center">
+            				<img src="images/games-ad-icon.png" alt="VIP lounge" width="121" height="90" />                       
+        
+                            <p><strong>VIP Lounge:</strong> <br  />Play games and chill out!</p>
+	            	</div>
+        		    </a>
+                </li>
+                
+                
+            
+   			    <li>
+               	  <a href="links.html">
+           			  <div id="thirdAdBox" align="center">    
+                       	  <img src="images/social-ad-icon.png" alt="Social links" width="98" height="98" />
+                                                    
+       	  				  <p><strong>Social:</strong> <br />I'm on Facebook, Twitter and YouTube too!</p>            
+		          		</div>
+       		      </a>
+      			</li>
+      		</ul>
+            
+		</div>
+              
+        <p style="margin-top:30px;"> Hello. Me? My name is <i>obviously</i> Toby and this is my site!  Feel free to surf around, but more importantly look at my short animations, download my podcasts and play some games! I have taken over 40 days to create this front page &#40;yes, just this page&#41;; so please respect it and email me with any errors you notice.
+        <br /><br />
+        	<span class="indent">
+            	<a href=javascript:decrypt_and_email(0)>Click here to send me a quick email</a>
+	        <br />
+    	    <br />
+        See ya&rsquo;ll later and have a great time!
+        	</span>
+  		</p>
+
+	</div>	<!--COLSED DIV "page"-->
+    
+</div>		<!--CLOSED DIV "pageContainer-->
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - RECCOMENDATIONS SECTION- - - - - - - - - - - - - - - - - - - - - - --> 
+
+
+
+
+
+<div id="reccomendationsContainer">
+
+	<div id="reccomendationsContent">
+    	<ul>
+        	<li>
+			  <div class="bubble" id="quoteOne" align="center"><!--QUOTE 1 BOX-->
+		  			<img src="images/quote-1.png" alt="EmilYxSax- Youtube" />
+               
+  	  			  	<div id="quoteOneName">
+				   		<p>EmilYxSax- Youtube</p>
+					</div>
+			  </div>
+       		</li>
+        
+        
+        
+        
+        	<li>
+            	<div class="bubble" id="quoteTwo" align="center"><!--QUOTE 2 BOX-->
+		  			<img src="images/quote-2.png" alt="DaveyDumpling- iTunes" align="middle" />
+               
+       	 	 		<div id="quoteTwoName">
+   	  					<p>DaveyDumpling- iTunes</p>
+				  </div>
+			  </div>
+           	</li>
+
+
+        
+					
+			<li>
+            	<div class="bubble" id="hitcounter" align="center"><!--HIT COUNTER BOX-->
+        
+       			 	<img src="images/bubble_280x120_left.png" alt="Number of views on tobyfox.co.uk so far..." id="hitcounterBubble" />
+   			
+           			<div id="hitContent">
+            			<p>	The current number of hits on my site is:</p>
+          	
+						<!--Start of hit counter-->
+						<div id="counterScript" align="center">
+							<script type="text/javascript" src="http://widget.supercounters.com/hit.js"></script>
+							<script type="text/javascript">sc_hit(227783,82,4);</script>
+						</div>
+  						<!--End of counter-->            
+            
+      	      			<div style="text-align:center">
+        	    			<p>Thanks to all you visitors!</p>
+       					</div>
+					</div>
+        		</div>
+       		</li>
+            
+     	</ul> 
+      
+      
+    </div>	<!--CLOSED DIV "reccomendationsContent"-->
+    
+    
+<!-- - - - - - - - - - - - - - - - - - - - - - FOOTER SECTION- - - - - - - - - - - - - - - - - - - - - - -->    
+	<div id="footer">
+    
+    
+
+        <p id="copyText">&copy; <i>Toby Fox 2013</i> | <i>All rights reserved</i></p> 
+        <p id="footLinks"><a href="index.html">Home</a> | <a href="radio.html">Radio</a> | <a href="links.html">Social</a> | <a href="vip/index.html">VIP Lounge</a></p>
+       
+		
+	</div>		<!-- CLOSED DIV "footer"-->    
+    
+</div>		<!--CLOSED DIV "reccomendationsContainer"-->
+
+</div>		<!--CLOSED DIV that makes everything center aligned-->
+
+<!-- Internet Justice league banner -->
+
+<a href="http://internetdefenseleague.org" target="_blank">
+	<img src="http://internetdefenseleague.org/images/badges/final/banner_left.png" alt="Member of The Internet Defense League" id="justiceLeagueLeft" />
+</a>
+
+
+
+</body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - END OF WEBSITE. THIS CODE IS COPYRIGHT (C) OF TOBY FOX 2012.- - - - - - - - - - - - - - - - - - - - - - -->
+
+
+
+
+</html>

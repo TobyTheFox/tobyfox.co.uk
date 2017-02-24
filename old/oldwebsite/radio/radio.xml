@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+  
+    <title>Toby Fox RADIO</title>
+	
+    <link>http://www.tobyfox.co.uk/radio.html</link>
+    <description>Toby Fox RADIO, TobyFox.co.uk's only radio channel! Featuring Toby Fox, some nifty sound effects and many themes varying from world tours to hits and even football! Download Toby Fox RADIO podcasts now!</description>
+	<itunes:summary>Toby Fox RADIO is a series of many episodes by Toby fox, and airing on TobyFox.co.uk. Like Toby Fox TV, it is featured regularily across the site.</itunes:summary>
+	<itunes:subtitle>Toby Fox RADIO, the only radio channel on the whole of TobyFox.co.uk!</itunes:subtitle>
+    <itunes:category text="Technology"></itunes:category>
+	<language>en-us</language>
+    <copyright>Copyright 2012. All rights reserved, but if you ask me nicely, I may let you use my stuff for yourself.</copyright>
+    <pubDate>25 Apr 2011 </pubDate>
+    <lastBuildDate>24 Jul 2012</lastBuildDate>
+    <managingEditor>toby@tobyfox.co.uk(Toby)</managingEditor>
+    <webMaster>toby@tobyfox.co.uk(Toby)</webMaster>
+    <image>
+   		<url>http://tobyfox.co.uk/images/radio-logo-2013.jpg</url>
+   	 	<title>Toby Fox RADIO</title>
+    	<link>http://tobyfox.co.uk/images/radio-logo-2013.jpg</link>
+	    <width>1400</width>
+    	<height>1400</height>
+    </image>
+    <itunes:owner>
+    	<itunes:name>Toby</itunes:name>
+    	<itunes:email>toby@tobyfox.co.uk</itunes:email>
+    </itunes:owner>
+    <itunes:author>Toby Fox</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+	
+	<item>
+      <title>Episode 21 (Interviewing Steven Hawking)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e21.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e21.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Toby Fox interviews famous celebrities, this week, Steven Hawking!</description>
+      <pubDate>Mon, 15 Aug 2011 18:00:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 21</itunes:subtitle>
+      <itunes:summary>Toby Fox interviews famous celebrities, this week, Steven Hawking!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, science, steven Hawking, interview</itunes:keywords>
+      <itunes:duration>00:04:28</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e21.mp3" length="4236247" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e21.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--21-->
+	
+	<item>
+		  <title>Episode 20 (Investigating Phenomena Pt. 3) </title>
+		  <link>http://tobyfox.co.uk/radio/s01/s01e20-phenomena3.mp3</link>
+		  <comments>http://tobyfox.co.uk/radio/s01/s01e20-phenomena3.mp3</comments>
+		  <itunes:author>Toby Fox</itunes:author>
+		  <dc:creator>Toby Fox</dc:creator>
+		  <description>Toby Fox investigates paranormal phenomena with the help from old friend, Barak Obama!</description>
+		  <pubDate>Mon, 25 Jul 2011 18:00:00 GMT</pubDate>
+		  <itunes:subtitle>Toby Fox RADIO episode 20</itunes:subtitle>
+		  <itunes:summary>Toby Fox investigates the paranormal phenomena with the help from old friend, Barak Obama!</itunes:summary>
+		  <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, Obama, US, paranormal, USA, investigating, phenomena</itunes:keywords>
+		  <itunes:duration>00:04:21</itunes:duration>
+		  <enclosure url="http://tobyfox.co.uk/radio/s01/s01e20-phenomena3.mp3" length="4236247" type="audio/mpeg" />
+		  <guid>http://tobyfox.co.uk/radio/s01/s01e20-phenomena3.mp3</guid>
+		  <itunes:explicit>no</itunes:explicit>
+		</item><!--20-->
+	
+	<item>
+      <title>Episode 19 (Investigating Phenomena Pt. 2) </title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e19-phenomena2.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e19-phenomena2.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Toby Fox investigates the phenomena of the feeling you get when you go down a roller-coaster.</description>
+      <pubDate>Fri, 22 Jul 2011 18:00:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 19</itunes:subtitle>
+      <itunes:summary>Toby Fox investigates the phenomena of the feeling you get when you go down a roller-coaster.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, roller, coaster, podcast, theme park, investigating, phenomena</itunes:keywords>
+      <itunes:duration>00:04:15</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e19-phenomena2.mp3" length="4236247" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e19-phenomena2.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--19-->
+	
+	<item>
+      <title>Episode 18 (Investigating Phenomena Pt. 1) </title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e18-phenomena1.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e18-phenomena1.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Toby Fox investigates the phenomena of DeJa-vu.</description>
+      <pubDate>Mon, 04 Jul 2011 18:00:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 18</itunes:subtitle>
+      <itunes:summary>Toby Fox investigates the phenomena of DeJa-vu.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, de ja vu, podcast, deja, investigating, phenomena</itunes:keywords>
+      <itunes:duration>00:03:03</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e18-phenomena1.mp3" length="4236247" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e18-phenomena1.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item>	<!--18-->
+	
+	<item>
+      <title>Episode 17 (The Loganberry Festival) </title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e17-loganberry.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e17-loganberry.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Due to the opening of the Loganberry festival, I am reporting on the act 'Aztec Donkeys' and manage to grab an interview with lead singer and guitarist  Alec. May contain strobe lighting.</description>
+      <pubDate>Mon, 21 Jun 2011 18:00:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 17</itunes:subtitle>
+      <itunes:summary>Due to the opening of the Loganberry festival, I am reporting on the act 'Aztec Donkeys' and manage to grab an interview with lead singer and guitarist  Alec. May contain strobe lighting.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, music, podcast, glastonbury, loganberry, festival</itunes:keywords>
+      <itunes:duration>00:05:34</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e17-loganberry.mp3" length="4236247" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e17-loganberry.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--17-->
+
+	<item>
+      <title>Episode 16 (Toby Fox's Food Bites)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e16.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e16.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>As promised in last weeks episode, Toby Fox's food bites is here, while I am in menorca. Me and my cousins prepare a selection of interesting and shocking food facts and stories, and serve them directly to you Toby Fox Radio listeners!</description>
+      <pubDate>Mon, 07 Jun 2011 18:00:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 16</itunes:subtitle>
+      <itunes:summary>As promised in last weeks episode, Toby Fox's food bites is here, while I am in menorca. Me and my cousins prepare a selection of interesting and shocking food facts and stories, and serve them directly to you Toby Fox Radio listeners!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 16, podcast, menorca, holiday, zorro</itunes:keywords>
+      <itunes:duration>00:05:34</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e16.mp3" length="4236247" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e16.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--16-->
+	
+    <item>
+      <title>Episode 15 (The guests are back)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e15.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e15.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>I meet up with some old mates who have been in a previous episode (5) because they have become friends again... If you are an enemy of mass destruction, turn away now!</description>
+      <pubDate>Mon, 02 May 2011 10:55:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 15</itunes:subtitle>
+      <itunes:summary>I meet up with some old mates who have been in a previous episode (5) because they have become friends again... If you are an enemy of mass destruction, turn away now!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 14, podcast, world tour, big, little</itunes:keywords>
+      <itunes:duration>00:06:02</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e15.mp3" length="4236247" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e15.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--15-->
+	
+    <item>
+      <title>Episode 14 (World tour Pt. 5)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e14.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e14.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>I meet up with some old friends (big Toby and little Toby) who were in RADIO episode 5, because they seem to </description>
+      <pubDate>Mon, 25 Apr 2011 05:55:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 14</itunes:subtitle>
+      <itunes:summary>I meet an Antarctic penguin who knits and cooks in Antarctica as part of my WT series. This is the final part of the series!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 13, podcast, world tour, antarctica</itunes:keywords>
+      <itunes:duration>00:04:25</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e14.mp3" length="4236247" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e14.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--14-->
+	
+    <item>
+      <title>Episode 13 (World tour Pt. 4)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e13.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e13.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>In China I visit a factory disguised as a Chinese girl, as part of my world tour series.</description>
+      <pubDate>Mon, 25 Apr 2011 05:52:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 13</itunes:subtitle>
+      <itunes:summary>In China I visit a factory disguised as a Chinese girl, as part of my world tour series.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 12, podcast, world tour, china</itunes:keywords>
+      <itunes:duration>00:04:57</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e13.mp3" length="4750049" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e13.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--13-->
+	
+    <item>
+      <title>Episode 12 (World tour Pt. 3)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e13.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e13.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Part 3 of my world tour where I visit a safari in Congo (Africa). Caution: Lions are involved</description>
+      <pubDate>Mon, 25 Apr 2011 05:49:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 12</itunes:subtitle>
+      <itunes:summary>Part 3 of my world tour where I visit a safari in Congo (Africa). Caution: Lions are involved</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 12, podcast, world tour, congo</itunes:keywords>
+      <itunes:duration>00:04:07</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e13.mp3" length="3963617" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e13.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--12-->
+	
+ 	  <item>
+      <title>Episode 11 (Holiday in London)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e11-hols2.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e11-hols2.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>I visit London with my family and record another audio diary there.</description>
+      <pubDate>Mon, 25 Apr 2011 05:45:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 11</itunes:subtitle>
+      <itunes:summary>I visit London with my family and record another audio diary there.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 11, podcast, holiday, london</itunes:keywords>
+      <itunes:duration>00:06:32</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e11-hols2.mp3" length="6280970" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e11-hols2.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--11-->
+	
+    <item>
+      <title>Episode 10 (best-of)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e10-newyear.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e10-newyear.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Since my new mic isn’t working, I have made a review of 2010 from my previous podcasts! A Best Of episode to enter us into the new year of 2011!</description>
+      <pubDate>Mon, 25 Apr 2011 05:42:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 10</itunes:subtitle>
+      <itunes:summary>Since my new mic isn’t working, I have made a review of 2010 from my previous podcasts! A Best Of episode to enter us into the new year of 2011!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 10, podcast, best of</itunes:keywords>
+      <itunes:duration>00:07:39</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e10-newyear.mp3" length="7350518" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e10-newyear.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--10-->
+	
+    <item>
+      <title>Episode 9 (Christmas)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e09-xmas.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e09-xmas.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>This is an episode of my Christmas happenings. Includes special guest: Jade from the USA!</description>
+      <pubDate>Mon, 25 Apr 2011 05:40:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 9</itunes:subtitle>
+      <itunes:summary>This is an episode of my Christmas happenings. Includes special guest: Jade from the USA!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 9, podcast, christmas</itunes:keywords>
+      <itunes:duration>00:05:08</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e09-xmas.mp3" length="4928307" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e09-xmas.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--9-->
+	
+    <item>
+      <title>Episode 8 (Holiday in Paris)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e08-hols.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e08-hols.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>An audio diary of my recent trip to Paris (For real). Sorry about the quality! I did it on my iPod, because I can\'t carry Toby Fox HQ around me.</description>
+      <pubDate>Mon, 25 Apr 2011 05:34:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 8</itunes:subtitle>
+      <itunes:summary>An audio diary of my recent trip to Paris (For real). Sorry about the quality! I did it on my iPod, because I can\'t carry Toby Fox HQ around me.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 8, podcast, holiday</itunes:keywords>
+      <itunes:duration>00:08:09</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e08-hols.mp3" length="7822377" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e08-hols.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--8-->
+	
+ 	   <item>
+      <title>Episode 7 (World tour Pt. 2)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e07.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e07.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Part two of my world tour. I am in America for this one, looking behind the scenes of McDonald\'s!</description>
+      <pubDate>Mon, 25 Apr 2011 05:32:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 7</itunes:subtitle>
+      <itunes:summary>Part two of my world tour. I am in America for this one, looking behind the scenes of McDonald\'s!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 7, podcast, world, tour, usa</itunes:keywords>
+      <itunes:duration>00:04:00</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e07.mp3" length="3837788" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e07.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--7-->
+	
+ 	   <item>
+      <title>Episode 6 (World tour Pt. 1)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e06.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e06.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Part one of my world tour. I am in France investing the Garnier Laborotoirs!</description>
+      <pubDate>Mon, 25 Apr 2011 05:31:00 GMT</pubDate>
+      <itunes:subtitle>Toby fox RADIO episode 6</itunes:subtitle>
+      <itunes:summary>Part one of my world tour. I am in France investing the Garnier Laborotoirs!</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 6, podcast, world, tour</itunes:keywords>
+      <itunes:duration>00:03:36</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e06.mp3" length="3460301" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e06.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--6-->
+	
+  	  <item>
+      <title>Episode 5 (Guests)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e05.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e05.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>This is a special episode with me and guests; Big and little Toby for my 5th episode spectacular.</description>
+      <pubDate>Mon, 25 Apr 2011 05:28:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 5</itunes:subtitle>
+      <itunes:summary>This is a special episode with me and guests; Big and little Toby for my 5th episode spectacular.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 5, podcast, party</itunes:keywords>
+      <itunes:duration>00:05:17</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e05.mp3" length="5075108" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e05.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--5-->
+	
+	<item>
+      <title>Episode 4 (Sports report from The Fox)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e04.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e04.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>Sport: The report from the Fox. In this episode I am debating football.</description>
+      <pubDate>Mon, 25 Apr 2011 05:24:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO episode 4</itunes:subtitle>
+      <itunes:summary>Sport: The report from the Fox. In this episode I am debating football.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode, 4, podcast, football</itunes:keywords>
+      <itunes:duration>00:03:34</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e04.mp3" length="3428844" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e04.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--4-->
+	
+	<item>
+      <title>Episode 3 (Report from The Fox)</title>
+      <link>http://tobyfox.co.uk/radio/s01/s01e03.mp3</link>
+      <comments>http://tobyfox.co.uk/radio/s01/s01e03.mp3</comments>
+      <itunes:author>Toby Fox</itunes:author>
+      <dc:creator>Toby Fox</dc:creator>
+      <description>This is a new series of Toby fox RADIO (News from the Fox) and should continue.</description>
+      <pubDate>Mon, 25 Apr 2011 05:21:00 GMT</pubDate>
+      <itunes:subtitle>Toby Fox RADIO, episode 3</itunes:subtitle>
+      <itunes:summary>This is a new series of Toby fox RADIO (News from the Fox) and should continue.</itunes:summary>
+      <itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode 3 podcast</itunes:keywords>
+      <itunes:duration>00:03:20</itunes:duration>
+      <enclosure url="http://tobyfox.co.uk/radio/s01/s01e03.mp3" length="3198157" type="audio/mpeg" />
+      <guid>http://tobyfox.co.uk/radio/s01/s01e03.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+    </item><!--3-->
+	
+	<item>
+		<title>Episode 2 (1000)</title>
+		<link>http://tobyfox.co.uk/radio/s01/s01e02.mp3</link>
+		<comments>http://tobyfox.co.uk/radio/s01/s01e02.mp3</comments>
+    	<itunes:author>Toby Fox</itunes:author>
+  		<dc:creator>Toby Fox</dc:creator>
+    	<description>This is all about the 1000th hit on tobyfox.co.uk, with some more updates about tobyfox.co.uk </description>
+ 	    <pubDate>Mon, 25 Apr 2011 05:17:00 GMT</pubDate>
+    	<itunes:subtitle>Toby Fox RADIO, episode 2</itunes:subtitle>
+  	    <itunes:summary>This is all about the 1000th hit on tobyfox.co.uk, with some more updates about tobyfox.co.uk </itunes:summary>
+    	<itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode 2 podcast</itunes:keywords>
+      	<itunes:duration>00:02:07</itunes:duration>
+      	<enclosure url="http://tobyfox.co.uk/radio/s01/s01e02.mp3" length="2034237" type="audio/mpeg" />
+      	<guid>http://tobyfox.co.uk/radio/s01/s01e02.mp3</guid>
+      	<itunes:explicit>no</itunes:explicit>
+	</item><!--2-->
+	
+    <item>
+    	<title>Episode 1</title>
+    	<link>http://tobyfox.co.uk/radio/s01/s01e01.mp3</link>
+    	<comments>http://tobyfox.co.uk/radio/s01/s01e01.mp3</comments>
+    	<itunes:author>Toby Fox</itunes:author>
+	    <dc:creator>Toby Fox</dc:creator>
+		<description>This is the first ever episode of Toby Fox RADIO.</description>
+		<pubDate>Mon, 25 Apr 2011 05:04:00 GMT</pubDate>
+		<itunes:subtitle>Toby Fox RADIO episode 1</itunes:subtitle>
+		<itunes:summary>This is the first ever episode of Toby Fox RADIO.</itunes:summary>	
+		<itunes:keywords>toby, fox, toby fox, tobyfox, tobyfox.co.uk, radio, toby fox radio, episode 1, podcast</itunes:keywords>
+		<itunes:duration>00:02:14</itunes:duration>
+		<enclosure url="http://tobyfox.co.uk/radio/s01/s01e01.mp3" length="2160067" type="audio/mpeg" />
+		<guid>http://tobyfox.co.uk/radio/s01/s01e01.mp3</guid>
+		<itunes:explicit>no</itunes:explicit>
+	</item><!--1-->
+
+    
+    
+   
+  
+	
+  </channel>
+</rss>

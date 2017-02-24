@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*------------------------------------ALL IN MAIN SECTION------------------------------------*/
+
+#introBlock h3 span{
+	color:#333333;
+}
+
+#animatedMeDiv{
+	width: 280px;
+	height: 320px;
+	background-image: url(../../vip/images/back-dome.png);
+	position: absolute;
+	left: 640px;
+	top: 20px;
+}
+
+#animatedMe2{
+	width:240px;
+	height:340px;
+	display:inline; 
+	margin:-20px 0 0 20px;
+}
+
+#meAsSlash{
+	width:350px;
+	height:410px;
+}
+
+#songQuote{
+	position: absolute;
+	top: 550px;
+	left: 375px;
+	width:615px;
+}
+
+#song2{
+	margin-top:50px;
+}
+
+
+/*------------------------------------END OF MAIN SECTION------------------------------------*/
+
+
+
+
+
+
+/*------------END OF PAGE. THIS WEBSITE IS (C) COPYRIGHT TOBY FOX 2008-2012. HANDCODED SINCE 2012. ------------*/
