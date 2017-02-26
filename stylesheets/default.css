@@ -770,7 +770,7 @@ input[type=checkbox].checkbox:checked + label.checkbox-label {
 
 
 
-
+/* - - - - - - - PROGRAM PAGES - - - - - - - */
 
 .programBody{
     width:80%;
@@ -785,6 +785,18 @@ input[type=checkbox].checkbox:checked + label.checkbox-label {
     padding: 0 20px;
     margin-top:20px
 }
+
+code{
+    font-family:monospace;
+    overflow: auto;
+    max-width: 800px;
+    height:600px;
+    margin:15px 0;
+}
+
+
+
+
 
 
 #successMessage{
