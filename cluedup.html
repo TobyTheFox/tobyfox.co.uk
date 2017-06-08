@@ -71,9 +71,14 @@
             </a>   
         </div>
 
-        <a href="http://wedunnit.me"><img src="images/cluedup-1.png" alt="Screenshot from Clued-up V1.01" /> </a>     
+        <a href="http://wedunnit.me"><img src="images/cluedup-1.png" alt="Screenshot from Clued-up V1.01" class="screenshot" /> </a>     
 
-
+        <a href="index.html#programs">
+            <div id="returnButton">
+                <img src="images/back-arrow.png" />
+                <h3>Return to programs</h3>
+            </div>
+        </a>
     </div>
 
 
@@ -82,29 +87,6 @@
     <!-- - - - - - - - - - - END OF VISIBLE PAGES - - - - - - - - - - -->
     <p class="copyright">All designed and made in 2017 by Toby Fox.<span style="margin-left:100px;"><a href="old/index.html" style="color:white">View old version</a></span></p>    
     
-    <script type="text/javascript">
-	//THIS SETS ALL Ps IN A DIV TO FADE IN AND OUT IN TURN, AND REPEATS THE FUNCTION, AND RUNS IT ONCE WHEN THE PAGE LOADS
-	function swapHeadlines(){
-		if ($(window).width() > 1200){
-		
-			$("#bio p").each(function(index) {
-    			$(this).delay(3100*index).fadeIn(300).delay(2500).fadeOut(300);
-			});
-		}
-	};
-
-	setInterval(swapHeadlines,15500);
-	$(document).ready(swapHeadlines());
-	
-	
-	</script>
-    
-    <!-- THIS IS FOR THE SNOWFALL - - - - - - - - - - - - - - --
-    <script src='scripts/snowfall.min.js'></script>
-    <script type='text/javascript'>     
-       	snowFall.snow(document.body, {round : true, minSize: 5, maxSize:8});
-    </script>
-	-->
 </body>
 
 </html>
