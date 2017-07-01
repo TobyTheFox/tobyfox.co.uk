@@ -1,0 +1,192 @@
+<!-- FOR CODE HIGHLIGHTING -->
+<link rel="stylesheet" href="js/highlightStyles/atelier-dune-dark.css">
+<script src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<div class="programBody" class="tilePage">
+    <h2>Google Hashcode Submission 2017</h2><br /><br />
+
+    <p>A few friends and myself formed a Google Hashcode team to take part in the 2017 edition of the challenge <a href="https://hashcode.withgoogle.com/2017/tasks/hashcode2017_qualification_task.pdf"><i>(Optimize Cache Servers for YouTube)</i></a> at the York Hub.</p>
+
+    <p>Our solution (in Python) gained a total of 1761773 points, ranking second place for the York hub (1st place had a score of 1992497).</p>
+
+    <p>The (slightly modified for clarity) Python code is avaialable below, or for download on our <a href="https://github.com/TobyTheFox/Hashcode2017">Github</a>.</p>
+
+    <pre><code class="python">import random
+from operator import itemgetter
+NAME = "trending_today" #Change to name of input data file
+RANDOM_FACTOR1 = 350    #The numebr of endpoints to use
+RANDOM_FACTOR2 = 500    #The number of videos to use for each endpoint
+
+videoCount = 0
+endpointCount = 0
+reqDescCount = 0
+cacheServerCount = 0
+capacity = 0
+
+def getEndpointsConnectedToCache(cacheID, endpoints):
+'''Returns list of endpoints connected to a cache'''
+connectedEndpoints = []
+for endpointIndex in range(len(endpoints)):
+    connections = endpoints[endpointIndex][2:]
+    for connection in connections:
+        if connection[0] == cacheID:
+            connectedEndpoints.append(endpointIndex)
+return connectedEndpoints
+
+
+def getPopularVideosForCache(cacheID, data):
+'''Returns list of sorted popular videos for cache;
+The combined popular videos for RANDOM_FACTOR1 of its endpoints'''
+print("GETTING POPULAR VIDEOS FOR CACHE ",cacheID)
+connectedEndpoints = getEndpointsConnectedToCache(cacheID,data[1])
+connectedEndpointIDs = []
+allVideos = []
+for connectedEndpoint in connectedEndpoints:
+    #allVideos += getPopularVideosInEndpoint(connectedEndpoint,data[2])
+    connectedEndpointIDs.append(connectedEndpoint)
+
+for i in range(RANDOM_FACTOR1):
+    allVideos += getPopularVideosInEndpoint(random.choice(connectedEndpointIDs),data[2])
+
+uniqueVideos = []
+for video in allVideos:
+    for uniqueVideoIndex in range(len(uniqueVideos)):
+        if uniqueVideos[uniqueVideoIndex][0] == video[0]:
+            uniqueVideos[uniqueVideoIndex][1] += video[1]
+            break
+    else:
+        uniqueVideos.append(video)
+popularVideos= sorted(uniqueVideos, key=itemgetter(1))
+popularVideos.reverse()
+return popularVideos
+
+
+def getPopularVideosInEndpoint(endpointID,requests):
+'''Returns sorted list of RANDOM_FACTOR2 video IDs for an endpoint'''
+popularVideos = []
+for i in range(RANDOM_FACTOR2):
+    request = random.choice(requests)
+    if request[1] == endpointID:
+        popularVideos.append([request[0],request[2]])
+popularVideos= sorted(popularVideos, key=itemgetter(1))
+popularVideos.reverse()
+return popularVideos
+
+
+def readFile():
+'''Reads parameters in NAME.in to globals, and returns list 
+[videos,endpoints,requests]'''
+
+global videoCount
+global endpointCount
+global reqDescCount
+global cacheServerCount
+global capacity
+
+f = open(NAME+".in", 'r')
+params = f.readline()
+paramlist = params.split(" ")
+videoCount = int(paramlist[0])
+endpointCount = int(paramlist[1])
+reqDescCount = int(paramlist[2])
+cacheServerCount = int(paramlist[3])
+capacity = int(paramlist[4])
+
+videos = []
+endpoints = []
+requests = []
+
+videos = f.readline()[:-1].split(" ")
+for videoIndex in range(len(videos)):
+    videos[videoIndex] = int(videos[videoIndex])
+
+for endpointIndex in range(endpointCount):
+    endpoint = f.readline()[:-1].split(" ")
+    for endIndex in range(len(endpoint)):
+        endpoint[endIndex] = int(endpoint[endIndex])
+
+    for connection in range(endpoint[-1]):
+        endpoint.append(f.readline()[:-1].split(" "))
+        for elementIndex in range(len(endpoint[-1])):
+            endpoint[-1][elementIndex] = int(endpoint[-1][elementIndex])
+
+    endpoints.append(endpoint)
+
+for request in range(reqDescCount):
+    request = f.readline()[:-1].split(" ")
+    for itemIndex in range(len(request)):
+        request[itemIndex] = int(request[itemIndex])
+    requests.append(request)
+
+return [videos, endpoints, requests]
+
+
+def allocateVideos(videosAndPopularity, data):
+'''Returns list of videosIDs that can be added to a cache considering capacity;
+videosAndPopularity is sorted in order of popularity'''
+
+allocatedVideos = []
+currentCapacity = capacity
+videoSizes = data[0]
+for videoPop in videosAndPopularity:
+    currentVideoID = videoPop[0]
+    if currentCapacity - videoSizes[currentVideoID] > 0:
+        allocatedVideos.append(currentVideoID)
+        currentCapacity -= videoSizes[currentVideoID]
+
+return allocatedVideos
+
+
+def encode(solution):
+'''Converts solution to NAME.out;
+Solution is list of videos for each cache'''
+
+f = open(NAME+".out", 'w')
+f.write(str(len(solution))+"\n")
+for serverIndex in range(len(solution)):
+    f.write(str(serverIndex))
+    for video in solution[serverIndex]:
+          f.write(" " + str(video))
+    f.write("\n")
+
+f.close()
+
+
+def findBasicSolution(data):
+'''Finds most popular videos on each cache and allocates them'''
+allocatedVideosByCache = []
+for cacheIndex in range(cacheServerCount):
+    cacheSolution = getPopularVideosForCache(cacheIndex,data)
+    allocatedVideosByCache.append(allocateVideos(cacheSolution, data))
+
+return allocatedVideosByCache
+
+random.seed()
+
+#EVALUATION FUNCTION NEEDED
+
+
+#MAIN BODY
+
+data = readFile()
+#IMPROVEMENT: Repeatedly find basic solutions and evaultate each.
+basicSolution = findBasicSolution(data)
+encode(basicSolution)
+
+    </code></pre>
+
+
+    <p>I first focussed on file reading while the rest of my team developed a strategy to minimise server waiting time. Our initial idea was to allocate the videos that had the most requests at each connected endpoint to each of the cache severs. This would mean that each cache server would hold the most frequently requested videos for the connected servers, but did not consider when multiple cache servers were connected to one endpoint, as there could be redundent copies of the most popular videos. As the larger datasets were huge, it was unfeasable to fetch and order the requested videos for <i>every</i> endpoint connected to <i>every</i> cache server. For this reson my solution ended up randomly selecting <code>RANDOM_FACTOR1</code> endpoints connected to each server, and ordered <code>RANDOM_FACTOR2</code> of the videos requestd from this server. The randomisation constants were changed for each dataset, where the higher the constant meant a more accurate solution but higher computation time.</p>
+
+    <p>While I worked on finding solutions for each of the input files, the rest of my team worked on building an evaluation function that would output the waiting time saved for each solution generated. Unfortunately they had difficulties developing this function (as they had not had very much expreience with programming), so it was decided it would be a better use of our time to generate as many solutions as we could and upload them to Hashcode's submission system, which only kept the best solution for each dataset. With more time we would have repeatedly generated solutions and used the evaluation function to only store the best solution. This would allow allow more computation time, and our solutions should've tended towards a reduced waiting time.</p>
+
+    <p>Unfortunately, due to these difficulties, we did not have time to add any optimisations to our code, but we considedered the possibility of reducing the number of copies of the same video hosted on multiple cache servers if their shared endpoints requested the video, and hosting the video on the cache server with least latency overall.</p>
+
+    <a href="/tiles/programs">
+        <div id="returnButton">
+            <img src="images/back-arrow.png" />
+            <h3>Return to programs</h3>
+        </div>
+    </a>
+</div>

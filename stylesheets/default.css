@@ -51,7 +51,6 @@
     font-style: normal;
 }
 
-
 /*-------------------------DEFAULTS----------------------------*/
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -113,7 +112,7 @@ p, a, li{
 .yellow{background-color:rgba(209,201,38,0.8)}
 .green{background-color:rgba(94,209,38,0.8)}
 .orange{background-color:rgba(198,117,31,0.8)}
-.twitterBlue{background-color:rgba(96,180,240,0.8)}
+.blue{background-color:rgba(96,180,240,0.8)}
 
 a{
 	color:#000;
@@ -132,13 +131,12 @@ html {
   background-size: cover;
 }
 
-#whitePanel{
+#backgroundPanel{
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: -10;
-    background-color: white;
-    display: none;
+    background-color: #141414;
 }
 
 #header{
@@ -193,7 +191,7 @@ html {
 	margin-left:20px;
 	
 	/*required as jquery doesnt support colour change*/
-	moz-transition:color .2s ease-in;
+	-moz-transition:color .2s ease-in;
     -o-transition:color .2s ease-in;
     -webkit-transition:color .2s ease-in;
 }
@@ -221,6 +219,44 @@ html {
 	margin-bottom:20px;
 }
 
+.fade{
+    opacity: 1;
+}
+
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.fade.ng-enter {
+    opacity: 0;
+}
+.fade.ng-enter-active {
+    opacity: 1;
+}
+.fade.ng-leave {
+    opacity: 1;
+}
+.fade.ng-leave-active {
+    opacity: 0;
+}
+.slide.ng-enter,
+.slide.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.slide.ng-enter {
+    left: 100%;
+}
+.slide.ng-enter-active {
+    left: 0;
+}
+.slide.ng-leave {
+    left: 0;
+}
+.slide.ng-leave-active {
+    left: -100%;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - HOME TILE SCREEN - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -228,7 +264,7 @@ html {
 	width:100%;
 	height:145px;
 	background-color:rgba(0,0,0,0.4);
-	margin-top:-50px;
+	margin-top:-10px;
 	margin-bottom:10px;
 }
 
@@ -238,16 +274,17 @@ html {
 	top:40px;
 }
 
-#bio p{
-	display:block;
-	display:none;
+#facts p{
+	display: none;
+    background-color: rgba(200,200,200,0.7);
+    margin-top: 45px;
+    padding:10px;
 }
 
-.bioPic{
+#bioImg{
 	margin:10px;
 	width:120px;
 	height:120px;
-	display:none;
 	float:left;
 }
 
@@ -343,11 +380,7 @@ html {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - OTHER PAGES - - - - - - - - - - - - - - - - - - - - - - */
 
 
-
-
-
 .tilePage{
-	display:none;
 	padding:40px;
 	width:80%;
 	max-width:1250px;
@@ -360,7 +393,7 @@ html {
 	}
 }
 
-.tilePage h2, .programBody h2{
+h2{
 	background-color:rgba(0,0,0,0.60);
 	color:#fff;
 	padding:5px;	

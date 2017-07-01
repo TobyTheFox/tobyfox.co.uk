@@ -1,0 +1,57 @@
+<!--View that contains all tiles and bio section-->
+<div id="tileContainer">
+    <div id="bioContainer">
+        <img id="bioImg" />
+        <h2>Hello. I'm Toby.</h2>
+        <div id="facts"> 	
+            <p>I'm a 20 year old student from Sheffield.</p>
+            <p>I'm studying Computer Science at Uni of York.</p>
+            <p>I've made a <a href="cluedup.html">game</a>.</p>
+            <p>I make small websites.</p>
+            <p>I'm pretty good with photoshop.</p>
+            <p>My <a href="www.youtube.com" target="_blank">video production</a> is pretty good too.</p>
+        </div>
+    </div>        
+    
+    
+    <div ng-repeat="section in sections">
+        <a href="tiles/{{section.title | lowercase}}">
+            <div class="tile {{section.colour}}">
+                <h3>{{section.title}}</h3>
+                <img ng-src="{{section.icon}}" alt="{{section.imgAlt}}" />
+            </div>
+        </a>
+    </div>
+    
+    <div>
+        <a href="cv-autumn-2016.pdf" download>
+            <div class="tile orange">
+                <h3>Full CV</h3>
+                <img src="images/cvIcon.png" alt="See my CV here" />
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+
+<script>    
+    function displayRandomBioImg () {
+        var imgId = Math.floor(Math.random()*4);
+        var bioImage = document.getElementById("bioImg");
+        bioImg.src = "/images/bioPic" + imgId + ".png";
+    }
+    
+    function swapFacts(){
+		if ($(window).width() > 1200){
+			$("#facts p").each(function(index) {
+    			$(this).delay(3300*index).fadeIn(300).delay(2500).fadeOut(300);
+			});
+		}
+    }
+    setInterval(swapFacts,18000);
+    
+    displayRandomBioImg();  
+    swapFacts();  
+</script>

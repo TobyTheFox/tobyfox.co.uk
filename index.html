@@ -1,541 +1,66 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>The Official Toby Fox Webpage</title>
-    <meta name="description" content="The official website of Toby Fox: TobyFox.co.uk is the home of all things Tobias-like. I do really cheap personal and small business web design." />
-    <meta name="author" content="Toby Fox" />
-    <meta name="copyright" content="Hello there. Please do not copy anything of mine because I don&#39;t like it. Thanks a bunch! &copy;Toby Fox 2015" />
-    <meta http-equiv="Content-Language" content="en-gb" />
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.6, maximum-scale=0.6">	
-    <link rel="icon" href="favicon.png" type="image/png" />
-    <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <link rel="stylesheet" href="stylesheets/default.css" type="text/css" />
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript" src="scripts/jquery.label_better.js"></script>
-    
-<!--Tracking Code-->
+<html ng-app="root">
+    <head>
+        <meta charset="UTF-8">
+        <base href="/" />
+        <title>The Official Toby Fox Webpage</title>
+        <meta name="description" content="The official website of Toby Fox: TobyFox.co.uk is the home of all things Tobias-like. I do really cheap personal and small business web design." />
+        <meta name="author" content="Toby Fox" />
+        <meta name="copyright" content="Hello there. Please do not copy anything of mine because I don&#39;t like it. Thanks a bunch! &copy;Toby Fox 2015" />
+        <meta http-equiv="Content-Language" content="en-gb" />
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.6, maximum-scale=0.6">	
+        <link rel="icon" href="favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <link rel="stylesheet" href="stylesheets/default.css" type="text/css" />
+        
+        <!--Tracking Code-->
 
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-  		_gaq.push(['_setAccount', 'UA-15065585-1']);
-  		_gaq.push(['_trackPageview']);
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-15065585-1']);
+            _gaq.push(['_trackPageview']);
 
-  		(function() {
-    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  		})();
-	</script>    
-</head>
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>  
+    </head>
 
-<body> 
-    
-    <div id="whitePanel"></div>
-
-<!-- - - - - - - - - - - - - - - - - - BIO PANEL - - - - - - - - - - - - - - - - - - - - -->    
-    <div id="header">
-    	<a href="#tile" style="text-decoration:none;"><h1>TobyFox.co.uk</h1></a> 
-        <a href="#tile" style="text-decoration:none;"><p id="dateBack">Est. 2008!</p></a>    	
-   	
- 		<div id="navigation">
-        	<a href="#programs"><p id="websitesNavItem" class="navItem">Programs</p></a>
-            <a href="#portfolio"><p id="portfolioNavItem" class="navItem">Portfolio</p></a>
-            <a href="#photography"><p id="photographyNavItem" class="navItem">Photography</p></a>
-            <a href="#production"><p id="productionNavItem" class="navItem">Production</p></a>
-      	</div>       
-           
-    </div>
-    
-    
-
-<!-- - - - - - - - - - - - - - - - - - TILE PANEL - - - - - - - - - - - - - - - - - - - - -->   
-      
-    <div id="tileContainer" class="tilePage">
-   		<div id="bioContainer">
-            <a href="#tile" >
-                <img class="bioPic" id="bioPic1" src="images/bioPic.png" alt="Myself: Toby Fox" />
-                <img class="bioPic" id="bioPic2" src="images/bioPic1.png" alt="Myself: Toby Fox" />
-                <img class="bioPic" id="bioPic3" src="images/bioPic3.png" alt="Myself: Toby Fox, playing my guitar in a field" />
-                <img class="bioPic" id="bioPic4" src="images/bioPic4.png" alt="Myself: Toby Fox, shot on 35mm film" />
-            </a>
-            <h2>Hello. I'm Toby.</h2>
-            <div id="bio"> 	
-                <p>I'm a 19 year old student from Sheffield.</p>
-                <p>I'm studying Computer Science at Uni of York.</p>
-                <p>I've made a <a href="cluedup.html">game</a>.</p>
-                <p>I make small websites.</p>
-                <p>I'm pretty good with photoshop.</p>
-                <p>My <a href="www.youtube.com" target="_blank">video production</a> is pretty good too.</p>
-        	</div>
-        </div>        
-            
-            
-            
-            
-            
-            
-            <div>
-                <a href="#programs">
-                    <div class="tile cyan">
-                        <h3>Programs</h3>
-                        <img src="images/programs.png" alt="Projects I've built over time" />
-                    </div>
-                </a>
-            </div>
-            
-            <div>
-                <a href="#portfolio">
-                    <div class="tile yellow">
-                        <h3>Portfolio</h3>
-                        <img src="images/portfolioIcon.png" alt="See my portfolio of work" />
-                    </div>
-                </a>
-            </div>
-            
-           <!-- REMOVED SECTION <div>
-                <a href="#websites">
-                    <div class="tile twitterBlue">
-                        <h3>Websites</h3>
-                        <img src="images/website.png" alt="Website design at TobyFox.co.uk" />
-                    </div>
-                </a>
-            </div> -->
-        
-            <div>
-                <a href="#photography">
-                    <div class="tile twitterBlue">
-                        <h3>Photography</h3>
-                        <img src="images/photography.png" alt="My photography" />
-                    </div>
-                </a>
-            </div>
-        
-            <div>
-                <a href="#production">
-                    <div class="tile green">
-                        <h3>Production</h3>
-                        <img src="images/production.png" alt="The things I have produced" />
-                    </div>
-                </a>
-            </div>
-            
-             <div>
-                <a href="#qualifications">
-                    <div class="tile red">
-                        <h3>Qualifications</h3>
-                        <img src="images/qualIcon.png" alt="View my current and prospective qualifications" />
-                    </div>
-                </a>
-            </div>
-            
-            
-            <div>
-                <a href="cv-autumn-2016.pdf" download>
-                    <div class="tile orange">
-                        <h3>Full CV</h3>
-                        <img src="images/cvIcon.png" alt="See my CV here" />
-                    </div>
-                </a>
-            </div>
-        
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-     <!-- - - - - - - - - - - - - - - - - - PORTFOLIO - - - - - - - - - - - - - - - - - - - - --> 
-    
-  	<div id="portfolioContainer" class="tilePage">
-        
-        <h2>Portfolio</h2><br />
-      
-    	<div class="portfolioItem">
-            <h3>PJS Music</h3><br />
-            <div class="browser">
-                <div class="browserTop">
-                    <a href="https://www.pjsmusic.com" target="_blank"><p class="urlBar"><span>https</span>://www.pjsmusic.com</p></a>
-                </div>
-                <img src="images/pjsmusic1.png" alt="The website I designed for PJS Music" class="browserImg" />
-           	</div>
-            <div class="browserDesc">
-                <p>I installed the website and modified the main website layout on the Opencart ecommerce system, creating all the graphics that are visible including the logo. I currently manage the shop website and update periodically with ways to increase online sales. This includes finding products, SEO or design changes.</p>
-                <p class="anchorP"><a href="https://www.pjsmusic.com" target="_blank">See the website</a></p>
-                <!--<img src="images/pjsmusic2.jpg" alt="The bannors I designed for PJS Music" />
-                <img src="images/pjsmusic3.jpg" alt="The business cards I designed for PJS Music" />-->
-                <p>My work is also instore, and alongside helping customers I run our live chat support system. My work has also led to three large bannors being produced, as well as thousands of business and discount cards. I also upgraded the till system to use a database linked POS interface and installed a receipt printer to print my own custom receipts.</p>
-           	</div>
-    	</div>
-    
-    
-    
-    	<a name="pagelinkXSound"></a>
-        <div class="portfolioItem">
-            <h3>Xtreme Sound Systems</h3><br />
-            <div class="browser">
-            	<div class="browserTop">
-                	<a href="http://www.xsound.co.uk" target="_blank"><p class="urlBar">www.xsound.co.uk</p></a>
-            	</div>
-            	<img src="images/xsound1.jpg" alt="The website I designed for xtreme sound systems" class="browserImg" />
-            </div>
-            <div class="browserDesc">
-            	<p>I also designed the website for PA Hire company Xtreme Sound Systems. Please take a look below. The website is mobile friendly, and features a simple form and animations.</p>
-            	<p class="anchorP"><a href="http://www.xsound.co.uk" target="_blank">See the website</a></p>
-    		</div>
-        </div>
-        
-        
-        <a name="pagelinkWedunnit"></a>
-        <div class="portfolioItem">
-            <h3>Wedunnit Software Engineering Group</h3><br />
-            <div class="browser">
-            	<div class="browserTop">
-                	<a href="http://www.wedunnit.me" target="_blank"><p class="urlBar">www.wedunnit.me</p></a>
-            	</div>
-            	<img src="images/wedunnit1.jpg" alt="The website I designed for wedunnit incorporated" class="browserImg" />
-            </div>
-            <div class="browserDesc">
-            	<p>I made this website for a software engineering team I am involved with as part of university. It is used to host documentation and executable games for four stages of the module, and has a mysterious theme.</p>
-            	<p class="anchorP"><a href="http://www.wedunnit.me" target="_blank">See the website</a></p>
-    		</div>
-        </div>
-        
-        
-        
-        
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  <!-- - - - - - - - - - - - - - - - - - PRODUCTION - - - - - - - - - - - - - - - - - - - - -->     
-    <div id="productionContainer" class="tilePage">
-        <h2>Production</h2><br />
-        
-    	<h3>Video Production</h3><br />
-        <h4>Seventh Son</h4><br />
-        <p>Rock band <a href="http://www.seventh-son.co.uk">Seventh Son</a>) asked me to produce a music video for their single <i>"Living On A Time Bomb"</i> and <i>"See Emily Play"</i>.</p>
-        
-        <iframe width="720" height="405" src="https://www.youtube.com/embed/bHwDMCyQIQA" frameborder="0" allowfullscreen></iframe><br /><br />
-        <iframe width="720" height="405" src="https://www.youtube.com/embed/tuYzzhOOdBg" frameborder="0" allowfullscreen></iframe><br /><br />
-        
-        <h3>Audio Production</h3><br />
-        <h4>URY (University Radio York)</h4>
-        <p>I am currently Assistant Chief Engineer for University Radio York, which has had me lead outside broadcasts and artist sessions.</p><br /><br />
-        
-        <h4>Xtreme Sound Systems</h4>
-        <p>For a number of years I have worked with Xtreme Sound Systems to provide sound/ lighting hire, for events such as the Tour De France and LIVE in Barnsley.</p>
-               
-    </div>
-      
-    
-    
-    
-    
-    
-    
-    
-<!-- - - - - - - - - - - - - - - - - - QUALIFICATIONS - - - - - - - - - - - - - - - - - - - - -->     
-    <div id="qualificationsContainer" class="tilePage">
-        <h2>Qualifications</h2><br />
-        
-        <h3>University Of York 2015 - 2019</h3><br />
-        <p>First Year - First Class Honours</p>
-        <p>Second Year - First Class Honours</p>
-        
-        <br />
-        <br />
-        
-    	<h3>Barnsley College 2013 - 2015</h3><br />
-        <p>Computing A2 - A*</p>
-        <p>Maths A2 - A</p>
-        <p>Chemistry A2 - A</p>
-        <p>Geography AS - B</p>
-        
-        <br />
-        <br />
-        
-        <h3>Ecclesfield School 2008 - 2013</h3><br />
-        <p>Astronomy – C</p>
-        <p>Biology – A*</p>
-        <p>Chemistry – A</p>
-        <p>Electronics – A*</p>
-        <p>English Lit – A</p>
-        <p>English Lang – A</p>
-        <p>French – A</p>
-        <p>Further Maths - B</p>
-        <p>Geography – A*</p>
-        <p>ICT – A</p>
-        <p>Maths – A*</p>
-        <p>Physics – A</p>
-        <p>Psychology – C</p>
-        <p>RE – A</p>
-        <p>Statistics – A</p>        
-    </div>
-    
-    
-  
-  
-  
-<!-- - - - - - - - - - - - - - - - - - PROGRAMS - - - - - - - - - - - - - - -->
-    <div id="programsContainer" class="tilePage">
-        <h2>Programs</h2><br /><br />
-        <p>This is where I host all the little projects and code I've have made. Sort of like a blog. But worse. Please bear in mind that these are mostly works in progress and are not cleaned in any way.</p>
-        
-        <div id="programListDiv">
-            <a href="#">
-                <h4 style="color:#666">COMING SOON MAL 9000.</h4>
-                <p>Voice controlled HAL9000.</p>
+    <body ng-controller="index">  
+        <div id="header">
+            <a href="/" style="text-decoration:none;">
+                <h1>TobyFox.co.uk</h1>
+            </a> 
+            <a href="/" style="text-decoration:none;">
+                <p id="dateBack">Est. 2008!</p>
             </a>
             
-            <a href="hashcode17.html">
-                <h4>Google Hashcode 2017 Entry</h4>
-                <p>My team's code for Hashcode 2017 (ranked second for the York hub)</p>
-            </a>
-            
-            <a href="http://wedunnit.me/">
-                <h4>Homicide In The Hub 4&sdot;01</h4>
-                <p>Another game made during my second year studying Computer Science.</p>
-            </a>
-
-            <a href="cluedup.html">
-                <h4>Clued-Up 1&sdot;01</h4>
-                <p>A game made during my second year studying Computer Science.</p>
-            </a>
-
-            <a href="#">
-                <h4 style="color:#666">COMING SOON Raspberry Pi Realtime Visualiser</h4>
-                <p>Python script that lights an array of LEDs depending on signal of audio in through the Pi's GPIO.</p>
-            </a>
-        </div>
-
-
-    </div>
-
-
-
-<!-- - - - - - - - - - - - - - - - - PHOTOGRAPHY - - - - - - - - - - - - - - -->
-    <div id="photographyContainer" class="tilePage">
-        <h2>Photography</h2><br /><br />
-        <iframe src="http://www.flickr.com/photos/155500766@N05/34374643323/player/" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-    </div>
-    
-    
-    
-    
-    
-    
-<!-- - - - - - - - - - - - - - - - - - WEBSITES - - - - - - - - - - - - - - -->
-	<div id="websitesContainer" class="tilePage">
- 		<h2>Websites</h2><br /><br />
- 		
-        
-        <div id="thirdsContainer">
-        	<div class="third" id="third1"> 
-            	<img src="images/fullcircle1.png" alt="Step 1" class="listImg" />
-                <p>Choose a template from the form below.</p><br />
-                     
-          	</div>
-                    
-        	<div class="third" id="third2">  
-            	<img src="images/fullcircle2.png" alt="Step 2" class="listImg" />
-                <p>I send you a very affordable quote.</p><br />
-                     
-       		</div>
-                    
-            <div class="third" id="third3">
-            	<img src="images/fullcircle3.png" alt="Step 2" class="listImg" />
-                <p>Soon you'll have your own website!</p><br />
-                     
-          	</div> 	
-  		</div>
-        
-        
-     	<div class="browser">
-        	<div class="browserTop">
-            	<a href="#websites"><p class="urlBar"><span>https</span>://www.yourdomainhere.com</p></a>
+            <div id="navigation">
+                <span ng-repeat="section in sections | filter:{navBar:1}">
+                    <a href="tiles/{{section.title | lowercase}}">
+                        <p class="navItem">{{section.title}}</p>
+                    </a>
+                </span>
             </div>
-               
-            <div id="websiteContent">
-               	<p id="yourWebsite">THIS COULD BE YOUR WEBSITE</p><br/>               
-                <a href="#portfolio"><h3>See my portfolio for examples of my work</h3></a>                
-            	<p class="boxP">You're only a click away from a clean and modern website at an affordable price!</p><br />
-                <div class="websiteListDiv">
-                    <p>My websites are:</p>
-                    <ul>
-                        <li><strong><u>Responsive</u></strong> - my websites are optimised for both large and small (mobile) screens</li>
-                        <li><strong><u>Modern in design, but simple in functionality</u></strong> - I beleive the best way to sell an idea is through eye catching yet simple designs</li>    
-              			<li><strong><u>Search engine optimised</u></strong> - with plenty of keywords and everything else that the major search engines look out for</li>
-                   	</ul>
-             	</div>
-                
-                <div class="websiteListDiv">
-                    <p>What do you I do?</p>
-                    <ol>
-                        <li>You will need to complete the form below.</li>
-                        <li>I will send you a full quote and estimated time to complete your website</li>
-                        <li>I will invoice you a £50 deposit.</li>
-                        <li>The fun part (I get the work done)</li>
-                        <li>When completed I will invoice you for full payment provided you are happy with my work.</li>
-                        <li>I can update the website with any small changes you require</li>
-                    	<li>The website will renew yearly</li>
-                   	</ul>
-             	</div>
-                
-            </div>	
-    	</div>
+        </div>       
         
-    	<form name="contactform" class="bl_form" method="post" action="form-submit.php" id="contactForm"> 
-        	<input type="text" class="label_better formField" placeholder="Name" name="name" >
-          	<input type="email" class="label_better formField" placeholder="Email Address" name="email">
-          	<div class="selectDiv">
-            	<select name="site" >
-            		<option value="">Which site did you prefer?</option>
-                	<option value="tobyfox.co.uk">This Website</option>
-                	<option value="xsound.co.uk">www.xsound.co.uk</option>
-                	<option value="pjsmusic.com">www.PJSmusic.com</option>
-           		</select>
-            </div>
-            
-            <p style="font-size:16px; margin-top:20px;">Please describe breifly what is needed for this website, and I'll send you a quote!</p>  
-          	<textarea name="comments" maxlength="1000" class="formTextField" placeholder="Comments"></textarea>
-     		<input type="submit" value="Submit" class="submitButton">  
-    	</form> 
- 	</div>
-    
-    
-    <!-- - - - - - - - - - - END OF VISIBLE PAGES - - - - - - - - - - -->
-    <p class="copyright">All designed and made in 2017 by Toby Fox.<span style="margin-left:100px;"><a href="old/index.html" style="color:black">View old version</a></span></p>    
-    
-    <script type="text/javascript"> <!-- text for fancy labels -->
-	 $(document).ready( function() {
-	    $(".label_better").label_better({
-	      easing: "bounce"
-	    });
-	  });
-  </script>
-  
-  
-  
-    
-<!-- own jquery -->
-    <script type="text/javascript">	
-   	function changeText(k){
-		if (k == 1) {
-			$("#dateBack").text("Est. 2008!");
-		}
-		else{
-			$("#dateBack").text("GO BACK!");
-		};
-	};
+        <div ng-view class="fade"></div>
         
-        function setBackgroundWhite(isWhite){
-            if(isWhite){
-                $('#whitePanel').fadeIn(500);
-            }else{
-                $('#whitePanel').fadeOut(500);
-            }
-        }
-	
-	function changeHash() {	
-		var arrayOfHash = new Array("websites", "photography", "portfolio", "qualifications", "production", "cv", "tile", "programs");	
-		var hashEnd = location.hash.substring(1); // strip the leading # symbol
-			
-		if ($.inArray(hashEnd, arrayOfHash) !== -1){     //if current hash is within the array then...
-			var k = 0;
-			if (hashEnd == "tile"){
-				var k = 1;
-			};
-											
-			var hash = hashEnd + 'Container';
-			var navItem = hashEnd + 'NavItem';
-			
-			$(".tilePage").fadeOut( "slow" );
-			$(".tilePage").css("display","none");
-			
-			$('#'+ hash).fadeToggle( "slow", "swing" );
-			$('#' + hash).css("display","block");
-			
-			$('.navItem').css("border-color","#9D9D9D"); //resets all nav bar colours
-			$('.navItem').css("background-color"," rgba(0,0,0,0)");
-			$('#' + navItem).css("border-color","#000");
-			$('#' + navItem).css("background-color"," rgba(0,0,0,.3)");
-            
-            if(hashEnd == "photography"){
-                setBackgroundWhite(true);
-            }else{
-                setBackgroundWhite(false);
-            }
-			
-			changeText(k);
-		};
-	};
-	
-	$(window).on('hashchange',changeHash);
-	$(document).ready(changeHash);
-	
-	
-	
-	
-	//THIS GENERATES A RANDOM NUMBER AND SHOWS ELEMENT #bioPic*RANDOM NO*
-	$(document).ready(function() {
-    	var randomInt = Math.floor((Math.random() * 4) + 1);
-		var element = "#bioPic" + randomInt;
-		$(element).css("display","inline");   
-    });
-	
-	
-	
-	
-	//THIS SETS ALL Ps IN A DIV TO FADE IN AND OUT IN TURN, AND REPEATS THE FUNCTION, AND RUNS IT ONCE WHEN THE PAGE LOADS
-	function swapHeadlines(){
-		if ($(window).width() > 1200){
-		
-			$("#bio p").each(function(index) {
-    			$(this).delay(3100*index).fadeIn(300).delay(2500).fadeOut(300);
-			});
-		}
-	};
-
-	setInterval(swapHeadlines,15500);
-	$(document).ready(swapHeadlines());
-	
-	
-	</script>
-    <script>
+        <p class="copyright">All designed and made in 2017 by Toby Fox.
+            <span style="margin-left:100px;">
+                <a href="old/index.html" style="color:black">View old version</a>
+            </span>
+        </p>    
+        
+    </body>
     
-    var dir = "/images/photography";
-var fileextension = ".jpg";
-$.ajax({
-    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-    url: dir,
-    success: function (data) {
-        // List all mp4 file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
-            var filename = this.href.replace(window.location.host, "").replace("http:///", "");
-            $("body").append($("<img src=" + dir + filename + "></img>"));
-        });
-    }
-});
-    </script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
-    <!-- THIS IS FOR THE SNOWFALL - - - - - - - - - - - - - - --
-    <script src='scripts/snowfall.min.js'></script>
-    <script type='text/javascript'>     
-       	snowFall.snow(document.body, {round : true, minSize: 5, maxSize:8});
-    </script>
-	-->
-</body>
-
+    <!-- Angualar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="js/root.js"></script>
+    <script src="js/angular-route.min.js"></script> <!--For routing -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script> <!-- For view animation -->
 </html>
