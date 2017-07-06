@@ -230,9 +230,12 @@ html {
 }
 .fade.ng-enter {
     opacity: 0;
+    margin-bottom:-10000px
 }
 .fade.ng-enter-active {
     opacity: 1;
+    display: block;
+    transition-delay: 0.3s;
 }
 .fade.ng-leave {
     opacity: 1;
@@ -242,8 +245,8 @@ html {
 }
 .slide.ng-enter,
 .slide.ng-leave {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .slide.ng-enter {
     left: 100%;
