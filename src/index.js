@@ -6,7 +6,7 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import Home from './Components/home';
-import EngagementRSVP from './Components/rsvp';
+import Engagement from './Components/engagement';
 import NotFound from './Components/notfound';
 
 import './App.css';
@@ -34,7 +34,7 @@ ReactDOM.render((
             <div>
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                    <Route exact path="/rsvp" component={EngagementRSVP}/>
+                    <Route exact path="/rsvp" component={Engagement}/>
                     <Route path="*" component={NotFound}/>
                 </Switch>
             </div>
