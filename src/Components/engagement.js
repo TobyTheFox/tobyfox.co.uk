@@ -223,62 +223,64 @@ class Engagement extends Component {
             ></iframe>
           </div>
 
-          <div className="rsvp-info-grid">
-            <div className="rsvp-info-card rsvp-when-card" id="when" ref={(element) => { this.sectionRefs.when = element; }}>
-              <h2 className="rsvp-section-heading">When?</h2>
-              <p className="rsvp-details-text">
-                <strong>19 June 2027</strong><br />
-                5pm ’til late
-              </p>
-              <div className="rsvp-clock-wrapper">
-                <ClockFace imageSrc={ClockImage} size={180} />
+          <div className="rsvp-info-stack">
+            <div className="rsvp-info-grid">
+              <div className="rsvp-info-card rsvp-when-card" id="when" ref={(element) => { this.sectionRefs.when = element; }}>
+                <h2 className="rsvp-section-heading">When?</h2>
+                <p className="rsvp-details-text">
+                  <strong>19 June 2027</strong><br />
+                  5pm ’til late
+                </p>
+                <div className="rsvp-clock-wrapper">
+                  <ClockFace imageSrc={ClockImage} size={180} />
+                </div>
+              </div>
+
+              <div className="rsvp-info-card" id="where" ref={(element) => { this.sectionRefs.where = element; }}>
+                <h2 className="rsvp-section-heading">Where?</h2>
+                <p className="rsvp-details-text">
+                  <strong>Little Nan’s 2.0</strong><br />
+                  23-24 Resolution Way<br />
+                  Depford<br />
+                  London<br />
+                  SE8 4NT
+                </p>
+                <p className="rsvp-details-text">
+                  1 min walk from Deptford station (1 stop from London Bridge; 15 min walk from Greenwich).<br />
+                </p>
+              </div>
+
+              <div className="rsvp-info-card" id="dress-code" ref={(element) => { this.sectionRefs['dress-code'] = element; }}>
+                <h2 className="rsvp-section-heading">Dress code</h2>
+                <p className="rsvp-details-text">
+                  If you’d like to match our vibe, we’d love to see warm, earthy colours, with a vintage feel.
+               </p>
+                <div className="rsvp-colour-palette" aria-label="Suggested colour palette">
+                  <span className="rsvp-colour-swatch" style={{ backgroundColor: '#C89A3C' }} title="Mustard yellow" />
+                  <span className="rsvp-colour-swatch" style={{ backgroundColor: '#C66A3D' }} title="Orange" />
+                  <span className="rsvp-colour-swatch" style={{ backgroundColor: '#5A4334' }} title="Brown" />
+                  <span className="rsvp-colour-swatch" style={{ backgroundColor: '#3F5B46' }} title="Dark green" />
+                </div>
+                <p className="rsvp-details-text">Most importantly, wear something you feel fab in!</p>
               </div>
             </div>
 
-            <div className="rsvp-info-card" id="where" ref={(element) => { this.sectionRefs.where = element; }}>
-              <h2 className="rsvp-section-heading">Where?</h2>
+            <div className="rsvp-info-card">
+              <h2 id="what-to-expect" ref={(element) => { this.sectionRefs['what-to-expect'] = element; }} className="rsvp-section-heading">What to expect</h2>
               <p className="rsvp-details-text">
-                <strong>Little Nan’s 2.0</strong><br />
-                23-24 Resolution Way<br />
-                Depford<br />
-                London<br />
-                SE8 4NT
-              </p>
-              <p className="rsvp-details-text">
-                1 min walk from Deptford station (1 stop from London Bridge; 15 min walk from Greenwich).<br />
+                  We’ll be celebrating our engagement and 10 year anniversary with a party at Little Nan’s 2.0, a quirky bar in Deptford. Expect <span className="utils-strikethrough">good</span> food, drinks, (live!) music, and lots of fun!<br />
               </p>
             </div>
 
-            <div className="rsvp-info-card" id="dress-code" ref={(element) => { this.sectionRefs['dress-code'] = element; }}>
-              <h2 className="rsvp-section-heading">Dress code</h2>
+            <div className="rsvp-info-card">
+              <h2 id="accommodation" ref={(element) => { this.sectionRefs.accommodation = element; }} className="rsvp-section-heading">Accommodation</h2>
               <p className="rsvp-details-text">
-                If you’d like to match our vibe, we’d love to see warm, earthy colours, with a vintage feel.
-             </p>
-              <div className="rsvp-colour-palette" aria-label="Suggested colour palette">
-                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#C89A3C' }} title="Mustard yellow" />
-                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#C66A3D' }} title="Orange" />
-                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#5A4334' }} title="Brown" />
-                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#3F5B46' }} title="Dark green" />
-              </div>
-              <p className="rsvp-details-text">Most importantly, wear something you feel fab in!</p>
+                There are plenty of hotels in the area, specifically around Greenwich (1 stop, or a 15 min walk). This includes:<br />
+                <a href="https://www.travelodge.co.uk/hotels/594/London-Greenwich-High-Road-hotel?checkIn=19/06/2027&checkOut=20/06/2027&rooms[0][adults]=2&rooms[0][children]=0&occr=off">Travelodge</a><br />
+                <a href="https://all.accor.com/booking/en/accor/hotel/3476?dateIn=2026-08-02&nights=1&compositions=2&stayplus=false&snu=false&accessibleRooms=false&hideWDR=true&productCode=null&hideHotelDetails=true&utm_campaign=3476-GB-cpc-desktop-default-0--mapresults--0-0-0&utm_medium=partenariats&hmGUID=6c9fd325-1844-4b9d-8026-5a73c85664c7&wiz_campaign=&utm_source=seo_meta_google&basketId=861da5b0-b85c-47ce-b182-026e62f51015">Novotel</a><br />
+                <a href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-greenwich.html?ARRdd=19&ARRmm=06&ARRyyyy=2027&NIGHTS=1&ROOMS=1&ADULT1=1&CHILD1=0&COT1=0&INTTYP1=DB">Premier Inn</a><br />
+              </p>
             </div>
-          </div>
-
-          <div className="rsvp-info-card">
-            <h2 id="what-to-expect" ref={(element) => { this.sectionRefs['what-to-expect'] = element; }} className="rsvp-section-heading">What to expect</h2>
-            <p className="rsvp-details-text">
-                We’ll be celebrating our engagement and 10 year anniversary with a party at Little Nan’s 2.0, a quirky bar in Deptford. Expect <span className="utils-strikethrough">good</span> food, drinks, (live!) music, and lots of fun!<br />
-            </p>
-          </div>
-
-          <div className="rsvp-info-card">
-            <h2 id="accommodation" ref={(element) => { this.sectionRefs.accommodation = element; }} className="rsvp-section-heading">Accommodation</h2>
-            <p className="rsvp-details-text">
-              There are plenty of hotels in the area, specifically around Greenwich (1 stop, or a 15 min walk). This includes:<br />
-              <a href="https://www.travelodge.co.uk/hotels/594/London-Greenwich-High-Road-hotel?checkIn=19/06/2027&checkOut=20/06/2027&rooms[0][adults]=2&rooms[0][children]=0&occr=off">Travelodge</a><br />
-              <a href="https://all.accor.com/booking/en/accor/hotel/3476?dateIn=2026-08-02&nights=1&compositions=2&stayplus=false&snu=false&accessibleRooms=false&hideWDR=true&productCode=null&hideHotelDetails=true&utm_campaign=3476-GB-cpc-desktop-default-0--mapresults--0-0-0&utm_medium=partenariats&hmGUID=6c9fd325-1844-4b9d-8026-5a73c85664c7&wiz_campaign=&utm_source=seo_meta_google&basketId=861da5b0-b85c-47ce-b182-026e62f51015">Novotel</a><br />
-              <a href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-greenwich.html?ARRdd=19&ARRmm=06&ARRyyyy=2027&NIGHTS=1&ROOMS=1&ADULT1=1&CHILD1=0&COT1=0&INTTYP1=DB">Premier Inn</a><br />
-            </p>
           </div>
 
           {!submitted ? (
