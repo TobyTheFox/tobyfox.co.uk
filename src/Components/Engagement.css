@@ -1,9 +1,37 @@
 :root {
   --bg-terracotta: #d95f1d;
   --card-cream: #fdfaf0;
+  --card-cream-darker: #efe2c9;
   --text-dark: #b84a0d;
   --rsvp-text-main: #333333;
   --input-border: #f3d4b6;
+}
+
+/* Floating section nav */
+.rsvp-section-nav {
+  position: fixed;
+  left: 100px;
+  top: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+}
+
+.rsvp-section-nav-link {
+  color: var(--card-cream);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.rsvp-section-nav-link:hover {
+  color: #ffffff;
+  transform: translateX(3px);
 }
 
 /* Overall Container & Outer Border Styling */
@@ -28,23 +56,14 @@
   width: 100%;
   max-width: 850px;
   border-radius: 40px;
-  padding: 50px 40px;
+  padding: 50px 40px 0;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   text-align: center;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
   margin-bottom: 20px;
-}
-
-/* Top Meta Header Details */
-.rsvp-meta-header {
-  display: flex;
-  justify-content: space-between;
-  color: var(--text-dark);
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  letter-spacing: 0.5px;
+  overflow: hidden;
 }
 
 /* Rounded Couple Photo Styling */
@@ -54,13 +73,22 @@
   margin: 0 auto 30px auto;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.rsvp-wide-photo-container {
+  width: min(100%, 720px);
+  aspect-ratio: 720 / 350;
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .rsvp-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .rsvp-names-image {
@@ -80,35 +108,65 @@
 }
 
 /* Event Info Details Block */
+.rsvp-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 30px 0 40px;
+}
+
+.rsvp-info-card {
+  border: 1px solid rgba(217, 95, 29, 0.14);
+  border-radius: 20px;
+  padding: 20px 18px;
+}
+
 .rsvp-section-heading {
   font-family: 'futura', 'Georgia', serif;
   font-style: italic;
   font-size: 2rem;
   color: var(--bg-terracotta);
-  margin: 40px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .rsvp-details-text {
   color: var(--rsvp-text-main);
   font-size: 1.1rem;
   line-height: 1.6;
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
+}
+
+.rsvp-map-frame-wrapper {
+  width: min(100%, 720px);
+  margin: 0 auto 30px;
+  padding: 35px 30px;
+  box-sizing: border-box;
+  background-image: url('../images/map-frame.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rsvp-map {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 12px;
-    margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: none;
+  display: block;
 }
 
 /* Interactive RSVP Form Elements */
 .rsvp-form {
-  margin-top: 40px;
-  padding-top: 30px;
+  margin: 40px -40px 0;
+  padding: 30px 40px 40px;
   border-top: 2px dashed var(--input-border);
   text-align: left;
+  background-color: var(--card-cream-darker);
+  border-radius: 0 0 24px 24px;
+  box-sizing: border-box;
 }
 
 .rsvp-form-group {
@@ -216,10 +274,12 @@
 }
 
 /* Unique placements and keyframes for the shimmering effect */
-.star-1 { top: 10%; left: 8%; animation: twinkle 3s infinite ease-in-out; }
-.star-2 { top: 25%; right: 7%; animation: twinkle 4s infinite ease-in-out 1s; }
-.star-3 { bottom: 30%; left: 5%; animation: twinkle 3.5s infinite ease-in-out 0.5s; }
-.star-4 { bottom: 12%; right: 9%; animation: twinkle 4.5s infinite ease-in-out 1.5s; }
+.star-1 { top: 25%; left: 8%; animation: twinkle 3s infinite ease-in-out; }
+.star-2 { top: 10%; right: 7%; animation: twinkle 4s infinite ease-in-out 1s; }
+.star-3 { top: 70%; left: 8%; animation: twinkle 3.5s infinite ease-in-out 0.5s; }
+.star-4 { top: 60%; right: 9%; animation: twinkle 4.5s infinite ease-in-out 1.5s; }
+.star-5 { top: 50%; left: 4%; animation: twinkle 4.5s infinite ease-in-out 1.5s; }
+.star-6 { top: 40%; right: 5%; animation: twinkle 4.5s infinite ease-in-out 1.5s; }
 
 @keyframes twinkle {
   0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.3; }
@@ -227,8 +287,32 @@
 }
 
 /* Responsive tweaks */
+@media (max-width: 1200px) {
+  .rsvp-section-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .rsvp-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rsvp-map-frame-wrapper {
+    width: 100%;
+    aspect-ratio: auto;
+    height: 300px;
+    padding: 0;
+    background-image: none;
+  }
+
+  .rsvp-map {
+    height: 300px;
+    border-radius: 12px;
+  }
+}
+
 @media (max-width: 500px) {
   .rsvp-card { padding: 35px 20px; }
   .rsvp-main-title { font-size: 2.6rem; }
-  .rsvp-meta-header { font-size: 1rem; }
 }
