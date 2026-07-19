@@ -3,7 +3,8 @@ import './Engagement.css';
 import NamesImage from '../images/phil-and-tobias.png';
 import CoupleImage from '../images/couple.png';
 import CoupleBoatImage from '../images/couple-boat.png';
-import MapImage from '../images/map-frame.png';
+import PartyCatImage from '../images/party-cat.png';
+import SadCatImage from '../images/sad-cat.png';
 import { setDocumentTitle, setFavicon } from '../helpers/helpers';
 
 class EngagementRSVP extends Component {
@@ -11,10 +12,12 @@ class EngagementRSVP extends Component {
     super(props);
     this.state = {
       guestName: '',
-      attending: 'yes',
+      attending: true,
       dietary: '',
       pizzaChoice: '',
-      submitted: false
+      submitted: false,
+      showModal: false,
+      showConfetti: false
     };
     this.sectionRefs = {};
   }
@@ -29,11 +32,27 @@ class EngagementRSVP extends Component {
     this.setState({ [name]: value });
   };
 
+  handleBoolInputChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value === 'true' || value === true });
+  };
+
   handleSubmit = (event) => {
     event.preventDefault();
     // Connect your database/API logic here if needed
     console.log('RSVP Data Submitted:', this.state);
-    this.setState({ submitted: true });
+    const isAttending = this.state.attending === true || this.state.attending === 'true';
+    this.setState({ submitted: true, showModal: true, showConfetti: isAttending });
+
+    if (isAttending) {
+      window.setTimeout(() => {
+        this.setState({ showConfetti: false });
+      }, 1800);
+    }
+  };
+
+  closeModal = () => {
+    this.setState({ showModal: false });
   };
 
   scrollToSection = (event, sectionId) => {
@@ -46,7 +65,7 @@ class EngagementRSVP extends Component {
   };
 
   render() {
-    const { guestName, attending, dietary, pizzaChoice, submitted } = this.state;
+    const { guestName, attending, dietary, pizzaChoice, submitted, showModal, showConfetti } = this.state;
     const sectionLinks = [
       { id: 'when', label: 'When' },
       { id: 'where', label: 'Where' },
@@ -79,6 +98,57 @@ class EngagementRSVP extends Component {
         </nav>
 
         <div className="rsvp-card">
+          {showConfetti && (
+            <div className="rsvp-confetti" aria-hidden="true">
+              {Array.from({ length: 120 }).map((_, index) => {
+                const launchPoints = ['top-left', 'top-center', 'top-right', 'left', 'right', 'bottom-left', 'bottom-center', 'bottom-right'];
+                const launchPoint = launchPoints[index % launchPoints.length];
+                const driftX = (index % 13 - 6) * 140;
+                const driftY = 720 + (index % 9) * 80;
+                const startX = launchPoint.includes('left') ? 8 + (index % 4) * 6 : launchPoint.includes('right') ? 82 - (index % 4) * 6 : 50 + ((index % 5) - 2) * 8;
+                const startY = launchPoint.includes('top') ? -4 - (index % 3) * 6 : launchPoint.includes('bottom') ? 104 + (index % 3) * 3 : 32 + (index % 4) * 8;
+                const duration = 1.8 + (index % 7) * 0.12;
+                const delay = (index % 8) * 0.02;
+                const colorSet = ['#d97706', '#fbbf24', '#f59e0b', '#b45309', '#fcd34d', '#fb923c'];
+                const color = colorSet[index % colorSet.length];
+
+                return (
+                  <span
+                    key={index}
+                    className={`rsvp-confetti-piece piece-${index % 8}`}
+                    style={{
+                      left: `${startX}%`,
+                      top: `${startY}%`,
+                      backgroundColor: color,
+                      animationDuration: `${duration}s`,
+                      animationDelay: `${delay}s`,
+                      '--drift-x': `${driftX}px`,
+                      '--drift-y': `${driftY}px`
+                    }}
+                  />
+                );
+              })}
+            </div>
+          )}
+          {showModal && (
+            <div className="rsvp-modal-backdrop" onClick={this.closeModal}>
+              <div className="rsvp-modal" onClick={(event) => event.stopPropagation()}>
+                <button className="rsvp-modal-close" onClick={this.closeModal} aria-label="Close modal">
+                  ×
+                </button>
+                <div className="rsvp-modal-cat-wrap">
+                  <img
+                    src={attending ? PartyCatImage : SadCatImage}
+                    alt={attending ? 'Party cat' : 'Sad cat'}
+                    className="rsvp-modal-cat"
+                  />
+                </div>
+                <h3 className="rsvp-modal-title">
+                  {attending ? 'Mr Fish says thanks for RSVPing!' : 'Mr Fish says sorry you can\'t make it'}
+                </h3>
+              </div>
+            </div>
+          )}
           
           {/*<div className="rsvp-photo-container">
             <img 
@@ -137,8 +207,15 @@ class EngagementRSVP extends Component {
             <div className="rsvp-info-card" id="dress-code" ref={(element) => { this.sectionRefs['dress-code'] = element; }}>
               <h2 className="rsvp-section-heading">Dress code</h2>
               <p className="rsvp-details-text">
-                None!
-              </p>
+                If you’d like to match our vibe, we’d love to see warm, earthy colours, with a vintage feel.
+             </p>
+              <div className="rsvp-colour-palette" aria-label="Suggested colour palette">
+                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#C89A3C' }} title="Mustard yellow" />
+                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#C66A3D' }} title="Orange" />
+                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#5A4334' }} title="Brown" />
+                <span className="rsvp-colour-swatch" style={{ backgroundColor: '#3F5B46' }} title="Dark green" />
+              </div>
+              <p className="rsvp-details-text">Most importantly, wear something you feel fab in!</p>
             </div>
           </div>
 
@@ -179,9 +256,9 @@ class EngagementRSVP extends Component {
                     <input
                       type="radio"
                       name="attending"
-                      value="yes"
-                      checked={attending === 'yes'}
-                      onChange={this.handleInputChange}
+                      value="true"
+                      checked={attending}
+                      onChange={this.handleBoolInputChange}
                       className="rsvp-radio-input"
                     />
                     Can't wait!
@@ -190,9 +267,9 @@ class EngagementRSVP extends Component {
                     <input
                       type="radio"
                       name="attending"
-                      value="no"
-                      checked={attending === 'no'}
-                      onChange={this.handleInputChange}
+                      value="false"
+                      checked={!attending}
+                      onChange={this.handleBoolInputChange}
                       className="rsvp-radio-input"
                     />
                     Sadly can't make it
@@ -200,7 +277,7 @@ class EngagementRSVP extends Component {
                 </div>
               </div>
 
-              {attending === 'yes' && (
+              {attending && (
                 <div className="rsvp-form-group">
                   <label className="rsvp-label">Choose your pizza</label>
                   <div className="rsvp-radio-group" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '10px' }}>
