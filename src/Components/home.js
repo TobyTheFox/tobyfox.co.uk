@@ -17,7 +17,7 @@ class Home extends Component {
         </header>
 
         <div className="home-embedded-video-container">
-          <iframe title="ConstructiveAmbiguity" className="home-embedded-video" src="https://www.youtube.com/embed/kRSIaqoip90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe title="ConstructiveAmbiguity" className="home-embedded-video" src="https://www.youtube.com/embed/kRSIaqoip90" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
 
         <footer className="home-footer">

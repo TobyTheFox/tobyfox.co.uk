@@ -306,7 +306,7 @@ class Engagement extends Component {
                       onChange={this.handleBoolInputChange}
                       className="rsvp-radio-input"
                     />
-                    Can't wait!
+                    Can&apos;t wait!
                   </label>
                   <label className="rsvp-radio-label">
                     <input
@@ -317,7 +317,7 @@ class Engagement extends Component {
                       onChange={this.handleBoolInputChange}
                       className="rsvp-radio-input"
                     />
-                    Sadly can't make it
+                    Sadly can&apos;t make it
                   </label>
                 </div>
               </div>

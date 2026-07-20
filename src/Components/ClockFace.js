@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 function ClockFace({ imageSrc, size = 180 }) {
   const [time, setTime] = useState(new Date());
@@ -43,5 +44,10 @@ function ClockFace({ imageSrc, size = 180 }) {
     </div>
   );
 }
+
+ClockFace.propTypes = {
+  imageSrc: PropTypes.string,
+  size: PropTypes.number
+};
 
 export default ClockFace;
