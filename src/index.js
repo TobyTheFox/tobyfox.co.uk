@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, HashRouter, Switch } from 'react-router-dom';
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
@@ -30,7 +30,7 @@ const theme = createMuiTheme({
 ReactDOM.render((
     <MuiThemeProvider theme={theme}>
         
-        <BrowserRouter>
+        <HashRouter>
             <div>
                 <Switch>
                     <Route exact path="/" component={Home}/>
@@ -38,7 +38,7 @@ ReactDOM.render((
                     <Route path="*" component={NotFound}/>
                 </Switch>
             </div>
-        </BrowserRouter>
+        </HashRouter>
 
     </MuiThemeProvider>
 ), document.getElementById('root'));
