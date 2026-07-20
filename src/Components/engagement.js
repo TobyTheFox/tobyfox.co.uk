@@ -387,7 +387,7 @@ class Engagement extends Component {
             </form>
           ) : (
             <div className="rsvp-success-msg">
-              ✨ Thank you! Your RSVP response has been successfully sent. ✨
+              <span role="img" aria-label="Sparkles">✨</span> Thank you! Your RSVP response has been successfully sent. <span role="img" aria-label="Sparkles">✨</span>
             </div>
           )}
 
