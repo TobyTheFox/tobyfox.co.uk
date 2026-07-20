@@ -1,5 +1,3 @@
-import { useRef, useEffect } from 'react';
-
 export function setDocumentTitle(title) {
   document.title = title;
 }

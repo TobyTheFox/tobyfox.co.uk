@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Engagement.css';
 import NamesImage from '../images/phil-and-tobias.png';
-import CoupleImage from '../images/couple.png';
 import CoupleBoatImage from '../images/couple-boat.png';
 import PartyCatImage from '../images/party-cat.png';
 import SadCatImage from '../images/sad-cat.png';
@@ -191,14 +190,6 @@ class Engagement extends Component {
             </div>
           )}
           
-          {/*<div className="rsvp-photo-container">
-            <img 
-              src={CoupleImage} 
-              alt="Philippa & Tobias" 
-              className="rsvp-photo" 
-            />
-          </div>*/}
-
           <div className="rsvp-wide-photo-container">
             <img 
               src={CoupleBoatImage} 
